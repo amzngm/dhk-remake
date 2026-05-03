@@ -1,16 +1,6 @@
 import Link from 'next/link'
 import { memo } from 'react'
 
-interface MainBtnProps extends React.HTMLAttributes<HTMLElement> {
-  children: React.ReactNode
-  className?: string
-  ChildrenClassName?: string
-
-  to?: string
-  href?: string
-  onClick?: () => void
-}
-
 export default memo(function MainBtn({
   children,
   className = '',
@@ -21,7 +11,7 @@ export default memo(function MainBtn({
   onClick,
 
   ...rest
-}): MainBtnProps {
+}) {
   const baseStyles =
     'inline-flex justify-center items-center text-center transition-colors outline-none hover:bg-text hover:text-bg py-0.5 cursor-pointer tracking-wider'
 
