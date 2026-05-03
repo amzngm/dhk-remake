@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://dhk.ae/sitemap.xml',
+    sitemap: 'https://dhk-remake.vercel.app/sitemap.xml',
   }
 }

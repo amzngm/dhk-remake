@@ -25,7 +25,6 @@ const helveticaNowDisplay = localFont({
       style: 'normal',
     },
   ],
-  variable: '--font-main',
   display: 'swap',
 })
 
@@ -52,7 +51,7 @@ export const metadata = {
   authors: [{ name: 'dhk' }],
   creator: 'dhk',
   publisher: 'dhk',
-  metadataBase: new URL('https://dhk.ae'),
+  metadataBase: new URL('https://dhk-remake.vercel.app/'),
   alternates: {
     canonical: '/',
   },
@@ -60,7 +59,7 @@ export const metadata = {
     title: 'dhk | architects, urban designers, interior designers',
     description:
       "We create exceptional environments that enhance the human experience. dhk is a design-led studio of architects, urban designers and interior designers. Established in 1998, we're part of 10N, a collective created by Egis.",
-    url: 'https://dhk.ae',
+    url: 'https://dhk-remake.vercel.app/',
     siteName: 'dhk',
     locale: 'en_US',
     type: 'website',
@@ -89,26 +88,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="dark" suppressHydrationWarning className={`${helveticaNowDisplay.variable}`}>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function () {
-                try {
-                  const theme = localStorage.getItem('theme') || 'dark'
-                  document.documentElement.dataset.theme = theme
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
-      </head>
-
-      <body
-        suppressHydrationWarning
-        className="relative w-dvw h-full bg-bg selection:bg-main font-main text-text selection:text-bg antialiased md:subpixel-antialiased lowercase scroll-smooth"
-      >
+    <html lang="en" suppressHydrationWarning className={`${helveticaNowDisplay.className}`}>
+      <body className="relative w-full h-full bg-bg selection:bg-main text-text selection:text-bg antialiased md:subpixel-antialiased lowercase scroll-smooth">
         <AppWrapper>{children}</AppWrapper>
       </body>
     </html>

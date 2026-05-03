@@ -20,19 +20,7 @@ interface AnimInProps extends MotionProps {
 
 const AnimIn = forwardRef<HTMLElement, AnimInProps>(
   (
-    {
-      children,
-      as = 'div',
-      className = '',
-      delay = 0.3,
-      duration = 0.75,
-      once = true,
-      center = false,
-      scale = false,
-      toDown = false,
-      blur = false,
-      ...props
-    },
+    { children, as = 'div', className = '', delay = 0.3, duration = 0.75, once = true, center = false, scale = false, toDown = false, blur = false, ...props },
     ref
   ) => {
     const Tag = motion[as] as React.ComponentType<MotionProps & { className?: string; ref?: React.Ref<HTMLElement> }>

@@ -1,13 +1,11 @@
 import Link from 'next/link'
+import AnimText from '@/components/ui/unstyled/AnimText'
 
 export default function NotFound() {
   return (
-    <main className="z-10 relative flex flex-col justify-center items-center w-dvw h-dvh overflow-hidden font-wide max-md:text-main uppercase hide-nav">
-      <h2 className="text-[6dvw] hover:text-main leading-[2dvw] scale-x-300 scale-y-70 max-md:scale-y-200 max-md:origin-bottom max-md:-translate-y-3">
-        Nothing here
-      </h2>
-      <Link href="/" className="text-[20dvw] hover:text-main leading-[30dvw] scale-y-200">
-        Go back home
+    <main className="relative flex justify-center items-center w-dvw h-dvh overflow-hidden hide-nav">
+      <Link href="/" className="hover:text-main fl-text-sm/lg">
+        [<AnimText className="inline-flex gap-0.5 px-4">back home</AnimText>]
       </Link>
     </main>
   )
