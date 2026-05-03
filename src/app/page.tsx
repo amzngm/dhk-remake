@@ -15,7 +15,7 @@ const Journal = dynamic(() => import('@/components/home-components/Journal'))
 
 export default function HomePage() {
   return (
-    <Suspense fallback={<Loading />}>
+    <Suspense fallback={<Loading className="" dark={true} />}>
       <Hero />
       <About />
       <ImageSection />
