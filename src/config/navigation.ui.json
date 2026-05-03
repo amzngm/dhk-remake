@@ -1,0 +1,28 @@
+{
+  "navigation": [
+    {
+      "name": "home",
+      "slug": "/"
+    },
+    {
+      "name": "projects",
+      "slug": "/projects"
+    },
+    {
+      "name": "studio",
+      "slug": "/studio"
+    },
+    {
+      "name": "journal",
+      "slug": "/journal"
+    },
+    {
+      "name": "careers",
+      "slug": "/careers"
+    },
+    {
+      "name": "contact",
+      "slug": "/contact"
+    }
+  ]
+}
