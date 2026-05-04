@@ -5,7 +5,6 @@ import { metadataGenerators } from '@/seo/seo-helpers'
 
 export const metadata = metadataGenerators.home()
 
-// const Hero = dynamic(() => import('@/components/home-components/Hero'))
 // const About = dynamic(() => import('@/components/home-components/About'))
 // import ImageSection from '@/components/home-components/ImageSection'
 // const OurStory = dynamic(() => import('@/components/home-components/OurStory'))
@@ -13,10 +12,11 @@ export const metadata = metadataGenerators.home()
 // const Awards = dynamic(() => import('@/components/home-components/Awards'))
 // const Journal = dynamic(() => import('@/components/home-components/Journal'))
 
+import Hero from '@/components/home-components/Hero'
+
 export default function HomePage() {
   return (
     <Suspense fallback={<Loading className="" dark={true} />}>
-      {/* <Hero /> */}
       {/* <About /> */}
       {/* <ImageSection /> */}
       {/* <OurStory /> */}
@@ -24,7 +24,9 @@ export default function HomePage() {
       {/* <Awards /> */}
       {/* <Journal /> */}
 
-      {/* <div className="h-[250vh] bg-bg" /> */}
+      <Hero />
+
+      <div className="h-[250vh] bg-text" />
     </Suspense>
   )
 }

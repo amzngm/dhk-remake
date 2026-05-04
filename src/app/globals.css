@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 @plugin "fluid-tailwindcss";
+@theme {
+  --color-main: #8b8b8b;
+  --color-bg: #000000;
+  --color-text: #ffffff;
+}
 
 [data-theme='dark'] {
   --color-main: #8b8b8b;

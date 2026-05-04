@@ -28,7 +28,6 @@ export function createMetadataGenerator(route: string) {
 
 export const metadataGenerators = {
   home: createMetadataGenerator('/'),
-  about: createMetadataGenerator('/about'),
   careers: createMetadataGenerator('/careers'),
   contact: createMetadataGenerator('/contact'),
   projects: createMetadataGenerator('/projects'),

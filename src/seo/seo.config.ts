@@ -1,6 +1,6 @@
 export const SEO = {
   '/': {
-    title: 'dhk | architects, urban designers, interior designers',
+    title: 'dhk',
     description:
       "We create exceptional environments that enhance the human experience. dhk is a design-led studio of architects, urban designers and interior designers delivering buildings, public spaces and interiors that are contextually sensitive, environmentally responsible and technically resilient. Established in 1998, we're part of 10N, a collective created by Egis.",
     keywords: [
@@ -20,15 +20,8 @@ export const SEO = {
     ],
   },
 
-  '/about': {
-    title: 'about | dhk',
-    description:
-      "dhk was established in 1998 in a merger between Derick Henstra Architects and KCvR Architects. Today, dhk is part of 10N, a collective created by Egis. We're one of the leading architectural studios. We deliver award-winning buildings, urban designs and interior spaces.",
-    keywords: ['dhk', 'about', 'design studio', 'architecture', 'urban design', 'interior design', 'our story', '10N collective', 'Egis', 'established 1998'],
-  },
-
   '/careers': {
-    title: 'careers | dhk',
+    title: 'careers - dhk',
     description:
       'Join dhk and be part of a leading design studio at the forefront of our industry. We actively cultivate a stimulating environment where people want to work. A studio that grows talent, challenges ideas and supports innovative engagement. Part of 10N, a collective by Egis.',
     keywords: [
@@ -46,13 +39,13 @@ export const SEO = {
   },
 
   '/contact': {
-    title: 'contact | dhk',
+    title: 'contact - dhk',
     description: "Get in touch with dhk design studio. Let's discuss your project and explore how we can bring your vision to life.",
     keywords: ['dhk', 'contact', 'get in touch', 'design studio contact', 'architecture inquiry', 'interior design consultation'],
   },
 
   '/projects': {
-    title: 'projects | dhk',
+    title: 'projects - dhk',
     description:
       "Explore dhk's portfolio of award-winning projects. We deliver buildings, public spaces and interiors that are contextually sensitive, environmentally responsible and technically resilient. Featured: VOC Luxury Living, City Park, Conradie Park, Longkloof Precinct, The Signature, The Rubik.",
     keywords: [
@@ -70,39 +63,39 @@ export const SEO = {
   },
 
   '/journal': {
-    title: 'journal | dhk',
+    title: 'journal - dhk',
     description:
       'Insights, news, and stories from dhk. Stay updated with our latest projects, industry trends, design thinking, and our journey as part of the 10N collective by Egis.',
     keywords: ['dhk', 'journal', 'blog', 'news', 'design insights', 'architecture news', '10N collective', 'Egis'],
   },
 
   '/studio': {
-    title: 'studio | dhk',
+    title: 'studio - dhk',
     description:
       'Discover the dhk studio. Our team comprises multidisciplinary design professionals, technologists, BIM experts, architectural visualisers and graphic designers. We stay curious, always. We collaborate. We nurture talent. We design for the future. Part of 10N by Egis.',
     keywords: ['dhk', 'studio', 'design process', 'our space', 'BIM', 'design team', '10N collective', 'Egis'],
   },
 
   '/cookie-policy': {
-    title: 'cookie policy | dhk',
+    title: 'cookie policy - dhk',
     description: 'Our policy on cookies at dhk design studio.',
     keywords: ['dhk', 'cookie policy', 'cookies'],
   },
 
   '/privacy-policy': {
-    title: 'privacy policy | dhk',
+    title: 'privacy policy - dhk',
     description: 'Our policy on privacy at dhk design studio.',
     keywords: ['dhk', 'privacy policy', 'privacy'],
   },
 
   '/terms-of-use': {
-    title: 'terms of use | dhk',
+    title: 'terms of use - dhk',
     description: 'The terms and conditions for using the dhk website.',
     keywords: ['dhk', 'terms of use', 'terms and conditions'],
   },
 
   '*': {
-    title: 'page not found | dhk',
+    title: 'page not found - dhk',
     description: 'Sorry, the page you are looking for does not exist. Please check the URL and try again.',
     keywords: ['dhk', 'not found', 'page not found', 'error', '404'],
   },
@@ -135,7 +128,7 @@ export const generateProjectSEO = (project: Project) => {
   ]
 
   return {
-    title: `${project.name} | dhk`,
+    title: `${project.name} - dhk`,
     description: project.description || `${project.name} - An exceptional project by dhk design studio.`,
     keywords: keywords.filter(Boolean).join(', '),
   }

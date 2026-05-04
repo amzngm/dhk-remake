@@ -2,14 +2,12 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useScrollPosition } from '@/hooks/useScrollPosition'
 import Indicator from '@/components/ui/effects/Indicator'
 import ThemeSwitch from '@/components/nav-components/ThemeSwitch'
 import NavMenu from '@/components/nav-components/NavMenu'
 
 export default function Navbar() {
   const pathname = usePathname()
-  const scrollPosition = useScrollPosition(0.1)
 
   const links = [
     { name: 'Projects,', href: '/projects' },
@@ -19,15 +17,18 @@ export default function Navbar() {
   ]
 
   return (
-    <div className="w-full h-[50dvh] flex flex-col justify-between p-4.5">
+    <nav className="z-10 relative w-dvw max-md:font-bold fl-px-4/5 py-4">
       <div className="flex justify-between">
         <Indicator active={pathname === '/'}>
-          <Link href={'/'}>Home</Link>
+          <Link href={'/'} className="tracking-wide cursor-default">
+            Home
+          </Link>
         </Indicator>
-        <div className="w-1/2 flex justify-between tracking-wide">
+
+        <div className="max-lg:hidden flex justify-between w-1/2 ps-1">
           <ul className="flex gap-3">
             {links.map((link) => (
-              <li key={link.name} className="hover:text-main">
+              <li key={link.name} className="hover:text-main tracking-wide">
                 <Indicator active={pathname === link.href}>
                   <Link href={link.href}>
                     {link.name}
@@ -37,20 +38,17 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="flex justify-between gap-22">
+
+          <div className="flex justify-between items-start w-1/3 tracking-wide">
             <ThemeSwitch />
             <NavMenu />
           </div>
         </div>
-      </div>
 
-      <div style={{ opacity: scrollPosition ? 0 : 1 }} className="w-full flex justify-between items-end gap-4 text-text/45 duration-600">
-        <h3>welcome to dhk</h3>
-        <h3>
-          architects, urban designers, interior designers
-          <span className="font-light text-[11px] ml-4">↓</span>
-        </h3>
+        <div className="lg:hidden">
+          <NavMenu />
+        </div>
       </div>
-    </div>
+    </nav>
   )
 }

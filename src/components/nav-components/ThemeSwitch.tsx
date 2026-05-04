@@ -8,13 +8,13 @@ export default function ThemeSwitch() {
   const activeTheme = theme || 'dark'
 
   return (
-    <div className="inline-flex relative items-center gap-3 text-sm select-none">
+    <div className="relative flex justify-center items-center gap-3 px-1">
       <button
         type="button"
         aria-pressed={activeTheme === 'dark'}
         aria-label="Switch to dark theme"
         onClick={() => setTheme('dark')}
-        className={`transition px-2 py-1 rounded-full ${activeTheme === 'dark' ? 'bg-main text-bg' : 'text-text/70 hover:text-text'}`}
+        className={`cursor-pointer ${activeTheme === 'dark' ? 'text-text' : 'text-main hover:text-text'}`}
       >
         dark
       </button>
@@ -26,7 +26,7 @@ export default function ThemeSwitch() {
         aria-pressed={activeTheme === 'light'}
         aria-label="Switch to light theme"
         onClick={() => setTheme('light')}
-        className={`transition px-2 py-1 rounded-full ${activeTheme === 'light' ? 'bg-main text-bg' : 'text-text/70 hover:text-text'}`}
+        className={`cursor-pointer ${activeTheme === 'light' ? 'text-text' : 'text-main hover:text-text'}`}
       >
         light
       </button>
