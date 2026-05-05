@@ -1,11 +1,27 @@
 'use client'
 
+import { useSyncExternalStore } from 'react'
 import { useTheme } from 'next-themes'
+
+const subscribe = () => () => {}
+const getSnapshot = () => true
+const getServerSnapshot = () => false
 
 export default function ThemeSwitch() {
   const { theme, setTheme } = useTheme()
+  const mounted = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
   const activeTheme = theme || 'dark'
+
+  if (!mounted) {
+    return (
+      <div className="relative flex justify-center items-center gap-3 px-1">
+        <span className="text-main">dark</span>
+        <span className="text-main">/</span>
+        <span className="text-main">light</span>
+      </div>
+    )
+  }
 
   return (
     <div className="relative flex justify-center items-center gap-3 px-1">

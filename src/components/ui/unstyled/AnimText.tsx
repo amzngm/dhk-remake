@@ -6,7 +6,7 @@ import { motion, useReducedMotion } from 'motion/react'
 // ─── animation variants ────────────────────────────────────────────────────
 const WORD_HIDDEN = { y: '110%', opacity: 0 }
 const WORD_VISIBLE = { y: '0%', opacity: 1 }
-const WORD_TRANSITION = { duration: 0.75, ease: [0.22, 1, 0.36, 1] } as const
+const WORD_TRANSITION = { duration: 1.2, ease: [0.22, 1, 0.36, 1] } as const
 
 // ─── single word unit ──────────────────────────────────────────────────────
 function Word({ word, index, stagger, delay, reduced }: { word: string; index: number; stagger: number; delay: number; reduced: boolean }) {

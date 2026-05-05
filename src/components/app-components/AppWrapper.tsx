@@ -1,14 +1,14 @@
 import ThemeProviderWrapper from '@/components/app-components/ThemeProvider'
 import ScrollProvider from '@/components/app-components/ScrollProvider'
 import Banner from '@/components/app-components/banner'
-import Navbar from '@/components/nav-components/Navbar'
+import NavbarWrapper from '@/components/nav-components/NavbarWrapper'
 
 export default function AppWrapper({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProviderWrapper>
       <ScrollProvider>
         <Banner />
-        {/* <Navbar /> */}
+        <NavbarWrapper />
         {children}
       </ScrollProvider>
     </ThemeProviderWrapper>

@@ -5,22 +5,32 @@ import AppWrapper from '@/components/app-components/AppWrapper'
 const helveticaNowDisplay = localFont({
   src: [
     {
-      path: '../../public/font/HelveticaNowDisplay-Light.woff2',
+      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Thin.woff2',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Light.woff2',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../../public/font/HelveticaNowDisplay-Regular.woff2',
+      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../../public/font/HelveticaNowDisplay-Bold.woff2',
+      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../../public/font/HelveticaNowDisplay-Black.woff2',
+      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Black.woff2',
       weight: '900',
       style: 'normal',
     },
@@ -84,12 +94,15 @@ export const metadata = {
   verification: {
     google: 'your-google-verification-code',
   },
+  icons: {
+    icon: '/images/logos/main-logo.webp',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${helveticaNowDisplay.className}`}>
-      <body className="relative w-full h-full bg-bg selection:bg-main text-text selection:text-bg subpixel-antialiased lowercase scroll-smooth">
+      <body className="relative w-full h-full bg-bg selection:bg-[#A07B58] text-text subpixel-antialiased lowercase scroll-smooth">
         <AppWrapper>{children}</AppWrapper>
       </body>
     </html>

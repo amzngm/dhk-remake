@@ -24,5 +24,28 @@
       "name": "contact",
       "slug": "/contact"
     }
+  ],
+
+  "socialLinks": [
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/dhkarchitects/"
+    },
+    {
+      "name": "linkedIn",
+      "url": "https://www.linkedin.com/company/dhk-architects/"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/dhkarchitecture"
+    },
+    {
+      "name": "pinterest",
+      "url": "https://za.pinterest.com/dhkarchitects/"
+    },
+    {
+      "name": "vimeo",
+      "url": "https://vimeo.com/dhkarchitects"
+    }
   ]
 }
