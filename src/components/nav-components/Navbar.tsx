@@ -14,7 +14,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <AnimIn className="z-10 relative w-dvw font-medium fl-px-4/5 py-4">
+    <AnimIn as="nav" className="z-10 relative w-dvw font-medium fl-px-4/5 py-4">
       <div className="flex justify-between">
         <Indicator active={pathname === '/'}>
           <Link href={'/'} className="tracking-wide cursor-default">

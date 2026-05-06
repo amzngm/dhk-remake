@@ -11,8 +11,8 @@ export default function NavbarWrapper() {
   }
 
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
+    </>
   )
 }
