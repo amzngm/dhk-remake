@@ -100,9 +100,9 @@ export default function Hero() {
       <Navbar />
 
       {/* hero footer */}
-      <div style={{ opacity: scrollPosition ? 0 : 1 }} className="max-md:opacity-100! transition-opacity duration-600">
-        <div className="bottom-0 fixed flex justify-between max-md:justify-end w-full max-md:font-light md:text-main text-end leading-tight fl-tracking-[0.3px]/0.15px fl-px-4/5 py-5">
-          <h3 className="max-md:hidden">welcome to dhk</h3>
+      <div style={{ opacity: scrollPosition ? 0 : 1 }} className="max-lg:opacity-100! transition-opacity duration-600">
+        <div className="bottom-0 fixed flex justify-between max-lg:justify-end w-full max-lg:font-light lg:text-main text-end leading-tight fl-tracking-[0.3px]/0.15px fl-px-4/5 py-5">
+          <h3 className="max-lg:hidden">welcome to dhk</h3>
 
           <h3>
             architects, urban designers, interior designers
