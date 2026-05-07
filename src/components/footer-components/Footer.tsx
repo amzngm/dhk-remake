@@ -12,7 +12,7 @@ export default function Footer() {
   const pathname = usePathname()
 
   return (
-    <footer className="relative w-dvw lg:h-100 mt-46 fl-px-4/5 py-4">
+    <footer className="relative w-dvw mt-46 fl-px-4/5 py-4">
       <div className="flex max-lg:flex-col-reverse items-end gap-8 max-lg:gap-18 size-full">
         <div className="flex max-lg:flex-col max-lg:justify-end lg:items-end gap-1 lg:gap-8 size-full">
           <span>all rights reserved. dhk@2026</span>
@@ -53,7 +53,7 @@ export default function Footer() {
 
           <NewsletterForm />
 
-          <Link href="/contact" className="max-lg:order-first max-lg:col-span-2 hover:bg-text cursor-pointer">
+          <Link href="/contact" className="max-lg:order-first max-lg:col-span-2 hover:bg-text whitespace-nowrap cursor-pointer">
             [<span className="hover:text-bg px-8">Contact us</span>]
           </Link>
         </ul>

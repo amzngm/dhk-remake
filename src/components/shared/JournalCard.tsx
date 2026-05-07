@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useMouseFollower } from '@/components/shared/MouseFollower'
 
 export default function JournalCard({
   journalTitle,
@@ -14,8 +17,15 @@ export default function JournalCard({
   imageSrc: string
   slug: string
 }) {
+  const { setIsHovering } = useMouseFollower()
+
   return (
-    <Link href={`/journal/${slug}`} className="group block relative w-full lg:max-h-200 aspect-4/5 max-md:aspect-square overflow-hidden bg-bg cursor-pointer">
+    <Link
+      href={`/journal/${slug}`}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+      className="group block relative w-full lg:max-h-200 aspect-4/5 max-md:aspect-square overflow-hidden bg-bg cursor-pointer"
+    >
       {imageSrc && <Image src={imageSrc} alt={journalTitle} fill className="object-cover" />}
 
       <div className="bottom-0 z-10 absolute flex justify-between items-start gap-6 w-full bg-bg normal-case tracking-wide p-2">

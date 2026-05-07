@@ -38,7 +38,7 @@ export default function OurStory() {
   )
 
   return (
-    <section ref={containerRef} className="relative flex max-lg:flex-col w-dvw">
+    <section ref={containerRef} className="relative flex max-lg:flex-col w-dvw mb-70">
       <div className="relative w-full lg:w-1/2 aspect-square">
         <Image src="/images/artp/image-30.jpg" alt="Our Story" fill className="object-cover" />
       </div>
