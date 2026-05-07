@@ -24,8 +24,9 @@ export default function OurStory() {
             scrollTrigger: {
               trigger: containerRef.current,
               start: 'top 90%',
-              end: 'top -80%',
+              end: 'bottom 20%',
               scrub: true,
+              invalidateOnRefresh: true,
             },
           }
         )
