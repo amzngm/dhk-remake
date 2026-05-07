@@ -7,7 +7,7 @@ import AnimText from '@/components/ui/unstyled/AnimText'
 import Indicator from '@/components/ui/effects/Indicator'
 import NavMenu from '@/components/nav-components/NavMenu'
 import ThemeSwitch from '@/components/nav-components/ThemeSwitch'
-import navConfig from '@/config/navigation.ui.json'
+import navConfig from '@/db/navigation.json'
 
 export default function Navbar() {
   const links = navConfig.navigation.filter((item) => item.name !== 'home' && item.name !== 'contact')

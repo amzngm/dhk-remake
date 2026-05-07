@@ -1,0 +1,76 @@
+{
+  "radisson-red": {
+    "slug": "radisson-red",
+    "name": "Radisson Red",
+    "tagline": "Hotel Architecture",
+    "title": "Radisson Red",
+    "date": "2022",
+    "imageSrc": "/images/artp/image-11.avif",
+    "description": "Award-winning hotel project delivering contextually sensitive and environmentally responsible design. Radisson Red represents our commitment to creating exceptional environments that enhance the human experience.",
+    "location": {
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "sector": "Hospitality",
+    "type": "Hotel"
+  },
+
+  "city-park-mama-shelter": {
+    "slug": "city-park-mama-shelter",
+    "name": "City Park/Mama Shelter Hotel and Residences",
+    "tagline": "Mixed-use Development",
+    "title": "City Park/Mama Shelter Hotel and Residences",
+    "date": "2026",
+    "imageSrc": "/images/artp/image-25.jpg",
+    "description": "A contextually sensitive mixed-use development combining hospitality and residential design. This project showcases our expertise in creating vibrant, culturally integrated urban environments.",
+    "location": {
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "sector": "Mixed-use",
+    "type": "Hotel & Residences"
+  },
+
+  "seafront-estate": {
+    "slug": "seafront-estate",
+    "name": "Seafront Estate",
+    "tagline": "Luxury Residential",
+    "title": "Seafront Estate",
+    "date": "2026",
+    "imageSrc": "/images/artp/image-11.avif",
+    "description": "Seafront Estate residential development by dhk design studio. Environmentally responsible and technically resilient design that maximizes the connection between architecture and natural landscape.",
+    "location": {
+      "country": "UAE"
+    },
+    "sector": "Residential",
+    "type": "Residential Complex"
+  },
+
+  "drostdy-hotel": {
+    "slug": "drostdy-hotel",
+    "name": "Drostdy Hotel",
+    "tagline": "Heritage Hotel Design",
+    "title": "Drostdy Hotel",
+    "date": "2014",
+    "imageSrc": "/images/artp/image-9.avif",
+    "description": "Award-winning hotel architecture that respects historical context while delivering modern hospitality standards. A project that demonstrates our ability to balance heritage preservation with contemporary design.",
+    "sector": "Hospitality",
+    "type": "Heritage Hotel"
+  },
+
+  "the-signature": {
+    "slug": "the-signature",
+    "name": "The Signature",
+    "tagline": "Luxury Living",
+    "title": "The Signature",
+    "date": "2024",
+    "imageSrc": "/images/artp/image-12.avif",
+    "description": "The Signature luxury residential project by dhk. Delivering exceptional environments through innovative design that combines functionality with aesthetic excellence.",
+    "location": {
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "sector": "Residential",
+    "type": "Luxury Living"
+  }
+}

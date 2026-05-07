@@ -1,4 +1,5 @@
-import { SEO } from '@/seo/seo.config'
+import { SEO, generateProjectSEO } from '@/seo/seo.config'
+import projectsDbData from '@/db/projects.json'
 
 interface SEOData {
   title?: string
@@ -12,6 +13,22 @@ interface Metadata {
   keywords: string[]
 }
 
+interface ProjectData {
+  slug: string
+  name: string
+  tagline: string
+  description: string
+  title: string
+  date: string
+  imageSrc: string
+  location?: {
+    city?: string
+    country?: string
+  }
+  sector?: string
+  type?: string
+}
+
 export function createMetadataGenerator(route: string) {
   return function generateMetadata(): Metadata {
     const seoData = (SEO as Record<string, SEOData>)[route] || {}
@@ -23,6 +40,33 @@ export function createMetadataGenerator(route: string) {
     }
 
     return metadata
+  }
+}
+
+export function generateProjectMetadata(slug: string): Metadata {
+  const project = (projectsDbData as Record<string, ProjectData>)[slug]
+
+  if (!project) {
+    return {
+      title: 'Project Not Found - dhk',
+      description: 'This project could not be found.',
+      keywords: ['dhk', 'project', 'not found'],
+    }
+  }
+
+  const seo = generateProjectSEO({
+    name: project.name,
+    tagline: project.tagline,
+    description: project.description,
+    location: project.location,
+    sector: project.sector,
+    type: project.type,
+  })
+
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords.split(', '),
   }
 }
 

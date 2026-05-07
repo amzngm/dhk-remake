@@ -128,7 +128,7 @@ export const generateProjectSEO = (project: Project) => {
   ]
 
   return {
-    title: `${project.name} - dhk`,
+    title: `${project.name}`,
     description: project.description || `${project.name} - An exceptional project by dhk design studio.`,
     keywords: keywords.filter(Boolean).join(', '),
   }

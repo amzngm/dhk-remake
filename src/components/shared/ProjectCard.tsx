@@ -1,0 +1,25 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
+export default function ProjectCard({
+  imageSrc,
+  projectTitle,
+  projectDate,
+  projectLink,
+}: {
+  imageSrc: string
+  projectTitle: string
+  projectDate: string
+  projectLink: string
+}) {
+  return (
+    <Link href={projectLink} className="group block relative w-full lg:max-h-200 aspect-4/5 max-md:aspect-square overflow-hidden bg-bg cursor-pointer">
+      {imageSrc && <Image src={imageSrc} alt={projectTitle} fill className="object-cover" />}
+
+      <div className="bottom-0 z-10 absolute flex justify-between items-center w-full bg-bg fl-text-lg/xl normal-case tracking-wide lg:transition-transform lg:group-hover:translate-y-0 lg:translate-y-full lg:duration-200 px-2 py-1">
+        {projectTitle && <h6>{projectTitle}</h6>}
+        {projectDate && <span>{projectDate}</span>}
+      </div>
+    </Link>
+  )
+}

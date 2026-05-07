@@ -9,7 +9,8 @@ import { useIsMounted } from 'usehooks-ts'
 import AnimText from '@/components/ui/unstyled/AnimText'
 import Indicator from '@/components/ui/effects/Indicator'
 import NewsletterForm from '@/components/nav-components/NewsletterForm'
-import navConfig from '@/config/navigation.ui.json'
+import navConfig from '@/db/navigation.json'
+import socialLinks from '@/db/sociallinks.json'
 
 type NavMedia = {
   src: string
@@ -101,7 +102,7 @@ export default function NavMenu() {
                     </div>
 
                     <ul className="flex flex-col max-lg:gap-2 w-fit text-end">
-                      {navConfig.socialLinks.map((social) => (
+                      {socialLinks.socialLinks.map((social) => (
                         <AnimText as="li" key={social.name} className="lg:text-main/75 hover:text-text leading-normal">
                           <a href={social.url} target="_blank" rel="noopener noreferrer">
                             {social.name}
