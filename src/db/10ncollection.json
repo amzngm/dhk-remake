@@ -1,0 +1,28 @@
+{
+  "collection": [
+    {
+      "name": "dhk",
+      "link": "https://www.dhk.co.za/"
+    },
+    {
+      "name": "FIA",
+      "link": "https://www.fenwickiribarren.com/"
+    },
+    {
+      "name": "Omrania",
+      "link": "https://omrania.com/"
+    },
+    {
+      "name": "U+A",
+      "link": "https://ua-intl.com/cgi-sys/suspendedpage.cgi"
+    },
+    {
+      "name": "WW+P",
+      "link": "https://www.wwparchitects.com/"
+    },
+    {
+      "name": "10 Design",
+      "link": "https://10design.co/"
+    }
+  ]
+}

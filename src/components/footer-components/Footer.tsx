@@ -22,7 +22,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <ul className="flex justify-between items-end gap-18 max-lg:grid max-lg:grid-cols-2 size-full">
+        <ul className="flex justify-between items-end gap-8 max-lg:gap-18 max-lg:grid max-lg:grid-cols-2 size-full">
           <div>
             {navigationData.navigation.slice(0, -1).map((item, index) => (
               <Indicator
