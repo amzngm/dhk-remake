@@ -1,5 +1,6 @@
 import JournalCard from '@/components/shared/JournalCard'
 import JournalsData from '@/db/journals.json'
+import Link from 'next/link'
 
 export default function Journal() {
   return (
@@ -17,6 +18,12 @@ export default function Journal() {
             slug={journal.slug}
           />
         ))}
+
+        <div className="max-lg:hidden flex justify-center items-center">
+          <Link href="/journal" className="hover:bg-text cursor-pointer">
+            [<span className="hover:text-bg px-8">view more</span>]
+          </Link>
+        </div>
       </div>
     </section>
   )

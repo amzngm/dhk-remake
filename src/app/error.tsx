@@ -9,7 +9,7 @@ export default function Error({ error, unstable_retry }: { error: Error & { dige
   }, [error])
 
   return (
-    <main className="relative flex flex-col justify-center items-center gap-4 w-dvw h-dvh overflow-hidden fl-text-sm/base hide-nav">
+    <main className="relative flex flex-col justify-center items-center gap-4 w-dvw h-dvh overflow-hidden fl-text-sm/base hide-nav hide-footer">
       <AnimText as="h2">Something went wrong!</AnimText>
 
       <button onClick={() => unstable_retry()} className="hover:text-main lowercase cursor-pointer">

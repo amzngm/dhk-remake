@@ -76,22 +76,11 @@ export const SEO = {
     keywords: ['dhk', 'studio', 'design process', 'our space', 'BIM', 'design team', '10N collective', 'Egis'],
   },
 
-  '/cookie-policy': {
-    title: 'cookie policy - dhk',
-    description: 'Our policy on cookies at dhk design studio.',
-    keywords: ['dhk', 'cookie policy', 'cookies'],
-  },
-
   '/privacy-policy': {
-    title: 'privacy policy - dhk',
-    description: 'Our policy on privacy at dhk design studio.',
-    keywords: ['dhk', 'privacy policy', 'privacy'],
-  },
-
-  '/terms-of-use': {
-    title: 'terms of use - dhk',
-    description: 'The terms and conditions for using the dhk website.',
-    keywords: ['dhk', 'terms of use', 'terms and conditions'],
+    title: 'Privacy Policy - dhk',
+    description:
+      'Read the dhk Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website and use our services.',
+    keywords: ['dhk', 'privacy policy', 'privacy', 'data protection', 'personal information', 'GDPR', 'architecture studio privacy'],
   },
 
   '*': {
