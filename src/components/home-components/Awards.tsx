@@ -46,10 +46,10 @@ export default function Awards() {
 
   return (
     <section ref={sectionRef} className="relative w-dvw bg-bg text-text fl-px-4/5 py-44">
-      <div className="flex max-lg:flex-col justify-between items-start max-lg:gap-24 min-h-85 size-full">
-        <h4 className="font-semibold fl-text-4xl/7xl leading-none tracking-wide">Awards</h4>
+      <div className="flex max-lg:flex-col justify-between items-start gap-44 max-lg:gap-24 size-full">
+        <h4 className="font-semibold fl-text-4xl/7xl leading-none tracking-wide shrink">Awards</h4>
 
-        <ul onMouseMove={handleMouseMove} className="gap-2 grid w-full max-w-4xl normal-case">
+        <ul onMouseMove={handleMouseMove} className="flex flex-col justify-between gap-2 w-full max-w-4xl min-h-120 normal-case">
           {awards.slice(0, displayCount).map((award: Award, index: number) => (
             <li key={index} className="group relative flex justify-between cursor-pointer">
               <div>
@@ -76,18 +76,16 @@ export default function Awards() {
               </div>
             </li>
           ))}
-        </ul>
-      </div>
 
-      <div className="max-lg:flex max-lg:justify-center max-w-4xl ms-auto mt-24">
-        <button
-          onClick={() => {
-            setDisplayCount((prev) => Math.min(prev + 5, awards.length))
-          }}
-          className="w-fit hover:bg-text lowercase cursor-pointer"
-        >
-          [<span className="hover:text-bg px-8"> Load more</span>]
-        </button>
+          <button
+            onClick={() => {
+              setDisplayCount((prev) => Math.min(prev + 5, awards.length))
+            }}
+            className="w-fit hover:bg-text lowercase mt-24 cursor-pointer"
+          >
+            [<span className="hover:text-bg fl-px-1/8"> Load more</span>]
+          </button>
+        </ul>
       </div>
     </section>
   )

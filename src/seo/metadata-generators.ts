@@ -1,5 +1,6 @@
-import { SEO, generateProjectSEO } from '@/seo/seo.config'
+import { SEO, generateProjectSEO, generateJournalSEO } from '@/seo/seo-generators'
 import projectsDbData from '@/db/projects.json'
+import journalsData from '@/db/journals.json'
 
 interface SEOData {
   title?: string
@@ -11,6 +12,20 @@ interface Metadata {
   title: string
   description: string
   keywords: string[]
+}
+
+export function createMetadataGenerator(route: string) {
+  return function generateMetadata(): Metadata {
+    const seoData = (SEO as Record<string, SEOData>)[route] || {}
+
+    const metadata = {
+      title: seoData.title || '### | ####',
+      description: seoData.description || '### is a ####.',
+      keywords: seoData.keywords || [],
+    }
+
+    return metadata
+  }
 }
 
 interface ProjectData {
@@ -27,20 +42,6 @@ interface ProjectData {
   }
   sector?: string
   type?: string
-}
-
-export function createMetadataGenerator(route: string) {
-  return function generateMetadata(): Metadata {
-    const seoData = (SEO as Record<string, SEOData>)[route] || {}
-
-    const metadata = {
-      title: seoData.title || '### | ####',
-      description: seoData.description || '### is a ####.',
-      keywords: seoData.keywords || [],
-    }
-
-    return metadata
-  }
 }
 
 export function generateProjectMetadata(slug: string): Metadata {
@@ -61,6 +62,38 @@ export function generateProjectMetadata(slug: string): Metadata {
     location: project.location,
     sector: project.sector,
     type: project.type,
+  })
+
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords.split(', '),
+  }
+}
+
+interface JournalData {
+  slug: string
+  type: string
+  title: string
+  desc: string
+  imageSrc: string
+}
+
+export function generateJournalMetadata(slug: string): Metadata {
+  const journal = (journalsData.journals as JournalData[]).find((j) => j.slug === slug)
+
+  if (!journal) {
+    return {
+      title: 'Article Not Found - dhk Journal',
+      description: 'This article could not be found.',
+      keywords: ['dhk', 'journal', 'not found'],
+    }
+  }
+
+  const seo = generateJournalSEO({
+    title: journal.title,
+    type: journal.type,
+    desc: journal.desc,
   })
 
   return {

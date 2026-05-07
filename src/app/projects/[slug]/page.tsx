@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { use } from 'react'
-import { generateProjectMetadata } from '@/seo/seo-helpers'
+import { generateProjectMetadata } from '@/seo/metadata-generators'
 import projectsDbData from '@/db/projects.json'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

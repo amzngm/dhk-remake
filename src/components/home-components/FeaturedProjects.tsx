@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import ProjectCard from '@/components/shared/ProjectCard'
-import projectsDbData from '@/db/projects.json'
+import projectsData from '@/db/projects.json'
 
 export default function FeaturedProjects() {
-  const projects = Object.values(projectsDbData)
+  const projects = Object.values(projectsData)
 
   return (
     <section className="relative w-dvw bg-bg text-text fl-px-2.5/3 py-4">
@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
         projectLink={`/projects/${projects[0].slug}`}
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3">
+      <div className="grid lg:grid-cols-3">
         {projects.slice(1, 3).map((project, index) => (
           <ProjectCard
             key={index}

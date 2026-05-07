@@ -1,4 +1,4 @@
-import { metadataGenerators } from '@/seo/seo-helpers'
+import { metadataGenerators } from '@/seo/metadata-generators'
 
 export const metadata = metadataGenerators.journal()
 

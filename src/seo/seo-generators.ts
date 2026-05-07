@@ -133,3 +133,19 @@ export const generateProjectSEO = (project: Project) => {
     keywords: keywords.filter(Boolean).join(', '),
   }
 }
+
+interface Journal {
+  title: string
+  type: string
+  desc?: string
+}
+
+export const generateJournalSEO = (journal: Journal) => {
+  const keywords = [journal.title, journal.type, 'dhk', 'journal', 'news', 'insights', 'architecture', 'design']
+
+  return {
+    title: `${journal.title} - dhk Journal`,
+    description: journal.desc || `${journal.title} - Read the latest from dhk.`,
+    keywords: keywords.filter(Boolean).join(', '),
+  }
+}
