@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ProjectCard from '@/components/shared/ProjectCard'
 import projectsDbData from '@/db/projects.json'
 
@@ -27,9 +28,9 @@ export default function FeaturedProjects() {
         ))}
 
         <div className="max-lg:hidden flex justify-center items-center">
-          <a href="/projects" className="hover:bg-text cursor-pointer">
+          <Link href="/projects" className="hover:bg-text cursor-pointer">
             [<span className="hover:text-bg px-8">view all projects</span>]
-          </a>
+          </Link>
         </div>
 
         <div className="max-lg:hidden"></div>
