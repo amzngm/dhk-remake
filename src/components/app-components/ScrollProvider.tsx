@@ -2,9 +2,11 @@
 
 import Lenis from 'lenis'
 import { ReactNode, useEffect, useRef } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function ScrollProvider({ children }: { children: ReactNode }) {
   const lenisRef = useRef<Lenis | null>(null)
+  const pathname = usePathname()
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -27,6 +29,13 @@ export default function ScrollProvider({ children }: { children: ReactNode }) {
       lenisRef.current = null
     }
   }, [])
+
+  // Scroll to top on route change
+  useEffect(() => {
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true })
+    }
+  }, [pathname])
 
   return <>{children}</>
 }

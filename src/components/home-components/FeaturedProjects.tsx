@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 import ProjectCard from '@/components/shared/ProjectCard'
 import MouseFollower from '@/components/shared/MouseFollower'
 import projectsData from '@/db/projects.json'

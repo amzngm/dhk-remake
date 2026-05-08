@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 import { usePathname } from 'next/navigation'
 import Indicator from '@/components/ui/effects/Indicator'
 import NavMenu from '@/components/nav-components/NavMenu'

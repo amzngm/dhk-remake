@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
 import JournalCard from '@/components/shared/JournalCard'
 import MouseFollower from '@/components/shared/MouseFollower'
 import JournalsData from '@/db/journals.json'
