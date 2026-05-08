@@ -19,7 +19,7 @@ export default function OurStory() {
           contentRef.current,
           { y: '0%' },
           {
-            y: '40%',
+            y: '61%',
             ease: 'none',
             scrollTrigger: {
               trigger: containerRef.current,
@@ -44,11 +44,11 @@ export default function OurStory() {
       </div>
 
       <div ref={contentRef} className="relative flex max-lg:flex-col justify-between lg:gap-22 max-lg:gap-14 w-full lg:w-1/2 p-4 max-md:py-14 max-lg:py-22">
-        <Link href={'/studio'} className="group size-fit hover:bg-text lg:text-lg text-nowrap">
+        <Link href={'/studio'} className="group size-fit hover:bg-text text-nowrap">
           [<span className="group-hover:text-bg px-8">our story</span>]
         </Link>
 
-        <div className="relative space-y-6 lg:max-w-xl lg:text-lg normal-case leading-snug pe-4">
+        <div className="relative space-y-6 lg:max-w-lg normal-case pe-4">
           <p>
             dhk Architects was established in 1998 in a merger between Derick Henstra Architects and KCvR Architects. Today, we’re one of the largest and
             leading architectural studios in Africa. Since then, we’ve delivered award-winning buildings, urban designs and interior spaces in South Africa,

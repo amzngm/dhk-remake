@@ -1,5 +1,6 @@
 'use client'
 
+import AnimText from '@/components/ui/unstyled/AnimText'
 import { FormEvent, useState } from 'react'
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
@@ -38,12 +39,12 @@ export default function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-start max-lg:gap-2">
-      <span className="block">newsletter</span>
+    <form onSubmit={handleSubmit} className="flex flex-col items-start max-lg:gap-2 w-full">
+      <AnimText className="block">newsletter</AnimText>
 
       {(formStatus === 'idle' || formStatus === 'error' || formStatus === 'submitting') && (
         <>
-          <div className="flex items-center gap-1">
+          <AnimText className="flex items-center gap-1">
             {nameValue && <span>[ x ]</span>}
 
             <input
@@ -56,9 +57,9 @@ export default function NewsletterForm() {
               className="bg-transparent focus:outline-none placeholder:text-main/70"
               disabled={formStatus === 'submitting'}
             />
-          </div>
+          </AnimText>
 
-          <div className="flex items-center gap-1">
+          <AnimText className="flex items-center gap-1">
             {emailValue && <span>[ x ]</span>}
 
             <input
@@ -71,10 +72,10 @@ export default function NewsletterForm() {
               className="bg-transparent focus:outline-none placeholder:text-main/70"
               disabled={formStatus === 'submitting'}
             />
-          </div>
+          </AnimText>
 
-          <button type="submit" className="text-main/70 hover:text-text cursor-pointer" disabled={formStatus === 'submitting'}>
-            {formStatus === 'submitting' ? 'Please wait...' : '[ subscribe ]'}
+          <button type="submit" className="text-main/70 hover:text-text mt-1 cursor-pointer" disabled={formStatus === 'submitting'}>
+            <AnimText delay={0.2}>{formStatus === 'submitting' ? 'Please wait...' : '[ subscribe ]'}</AnimText>
           </button>
         </>
       )}

@@ -39,7 +39,7 @@ export default function About() {
   return (
     <section className="relative w-dvw bg-bg text-text fl-px-4/5 pt-8 pb-48">
       <div className="w-[85%] lg:w-[58%] ms-auto mb-18">
-        <div ref={containerRef} className="relative max-md:fl-text-3xl/7xl fl-text-5xl/7xl leading-17 max-md:leading-tight">
+        <div ref={containerRef} className="relative max-md:fl-text-3xl/7xl fl-text-5xl/6xl leading-none max-md:leading-tight">
           <span ref={weRef} className="right-full absolute me-2">
             we
           </span>
@@ -51,10 +51,10 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex max-lg:flex-col justify-center lg:justify-between w-full lg:text-lg">
+      <div className="flex max-lg:flex-col justify-center lg:justify-between w-full">
         <span>services</span>
         <div className="lg:w-[58%]">
-          <p className="lg:max-w-lg 2xl:max-w-2xl normal-case leading-snug">
+          <p className="lg:max-w-lg 2xl:max-w-xl font-light normal-case leading-snug">
             We’re architects, urban designers and interior designers. We deliver buildings, public spaces and interiors that are contextually sensitive,
             environmentally responsible and technically resilient.
           </p>

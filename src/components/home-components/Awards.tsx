@@ -49,7 +49,7 @@ export default function Awards() {
       <div className="flex max-lg:flex-col justify-between items-start gap-44 max-lg:gap-24 size-full">
         <h4 className="font-semibold fl-text-4xl/7xl leading-none tracking-wide shrink">Awards</h4>
 
-        <ul onMouseMove={handleMouseMove} className="flex flex-col justify-between gap-2 w-full max-w-5xl max-lg:fl-text-base/lg text-lg normal-case">
+        <ul onMouseMove={handleMouseMove} className="flex flex-col justify-between gap-1 w-full max-w-5xl normal-case">
           {awards.slice(0, displayCount).map((award: Award, index: number) => (
             <li key={index} className="group relative flex justify-between text-main/50 hover:text-text cursor-pointer">
               <div className="flex justify-between fl-gap-2/22">
@@ -61,7 +61,7 @@ export default function Awards() {
               </div>
 
               <h6 className="max-lg:hidden">{award.award}</h6>
-              <span className="lg:hidden fl-text-sm/xl whitespace-nowrap">[ + ]</span>
+              <span className="lg:hidden whitespace-nowrap">[ + ]</span>
 
               <div
                 ref={(el) => {

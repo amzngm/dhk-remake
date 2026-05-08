@@ -14,16 +14,16 @@ export default function Footer() {
   return (
     <footer className="relative w-dvw mt-46 fl-px-4/5 py-4">
       <div className="flex max-lg:flex-col-reverse items-end gap-8 max-lg:gap-18 size-full">
-        <div className="flex max-lg:flex-col max-lg:justify-end lg:items-end gap-1 lg:gap-8 size-full">
-          <span>all rights reserved. dhk@2026</span>
+        <div className="flex max-lg:flex-col max-lg:justify-end lg:items-end gap-1 lg:gap-8 size-full tracking-wide">
+          <AnimText>all rights reserved. dhk@2026</AnimText>
 
           <Link href={'/privacy-policy'} className="hover:text-main uppercase">
-            POPI + PAIA
+            <AnimText>POPI + PAIA</AnimText>
           </Link>
         </div>
 
-        <ul className="flex justify-between items-end gap-8 max-lg:gap-18 max-lg:grid max-lg:grid-cols-2 size-full">
-          <div>
+        <ul className="flex justify-between items-end max-lg:gap-18 max-lg:grid max-lg:grid-cols-2 size-full">
+          <div className="w-full">
             {navigationData.navigation.slice(0, -1).map((item, index) => (
               <Indicator
                 key={item.slug}
@@ -41,7 +41,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <div>
+          <div className="w-full">
             {socialLinksData.socialLinks.map((item, index) => (
               <AnimText as="li" delay={index * 0.05} key={item.name} className="hover:text-main tracking-wide mt-1.5 max-lg:mt-3.5">
                 <a href={item.url} target="_blank" rel="noopener noreferrer">
@@ -54,7 +54,9 @@ export default function Footer() {
           <NewsletterForm />
 
           <Link href="/contact" className="max-lg:order-first max-lg:col-span-2 hover:bg-text whitespace-nowrap cursor-pointer">
-            [<span className="hover:text-bg px-8">Contact us</span>]
+            <AnimText>
+              [<span className="hover:text-bg tracking-wide px-10">Contact us</span>]
+            </AnimText>
           </Link>
         </ul>
       </div>

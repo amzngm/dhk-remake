@@ -5,11 +5,6 @@ import AppWrapper from '@/components/app-components/AppWrapper'
 const helveticaNowDisplay = localFont({
   src: [
     {
-      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Thin.woff2',
-      weight: '100',
-      style: 'normal',
-    },
-    {
       path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Light.woff2',
       weight: '300',
       style: 'normal',
@@ -27,11 +22,6 @@ const helveticaNowDisplay = localFont({
     {
       path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Bold.woff2',
       weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../../public/font/helveticaNowDisplay/HelveticaNowDisplay-Black.woff2',
-      weight: '900',
       style: 'normal',
     },
   ],

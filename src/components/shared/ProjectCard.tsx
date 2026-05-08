@@ -35,7 +35,7 @@ export default function ProjectCard({
         />
       )}
 
-      <div className="bottom-0 z-10 absolute flex justify-between items-center w-full bg-bg fl-text-lg/xl normal-case tracking-wide lg:transition-transform lg:group-hover:translate-y-0 lg:translate-y-full lg:duration-200 px-2 py-1">
+      <div className="bottom-0 z-10 absolute flex justify-between items-center w-full bg-bg normal-case tracking-wide lg:transition-transform lg:group-hover:translate-y-0 lg:translate-y-full lg:duration-200 px-2 py-1">
         {projectTitle && <h6 className="line-clamp-1">{projectTitle}</h6>}
         {projectDate && <span>{projectDate}</span>}
       </div>

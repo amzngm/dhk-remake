@@ -1,26 +1,14 @@
 'use client'
 
 import { isValidElement, useMemo, useRef } from 'react'
-import { motion, useReducedMotion } from 'motion/react'
-
-// ─── animation variants ────────────────────────────────────────────────────
-const WORD_HIDDEN = { y: '110%', opacity: 0 }
-const WORD_VISIBLE = { y: '0%', opacity: 1 }
-const WORD_TRANSITION = { duration: 1.2, ease: [0.22, 1, 0.36, 1] } as const
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 
 // ─── single word unit ──────────────────────────────────────────────────────
-function Word({ word, index, stagger, delay, reduced }: { word: string; index: number; stagger: number; delay: number; reduced: boolean }) {
+function Word({ word }: { word: string }) {
   return (
-    // clip wrapper — overflow:hidden masks the slide-up travel
     <span className="inline-block overflow-hidden align-bottom leading-[1.1] mb-[-0.1em] pb-[0.1em]">
-      <motion.span
-        className="inline-block will-change-transform"
-        initial={reduced ? WORD_VISIBLE : WORD_HIDDEN}
-        animate={WORD_VISIBLE}
-        transition={{ ...WORD_TRANSITION, delay: delay + index * stagger }}
-      >
-        {word}
-      </motion.span>
+      <span className="inline-block will-change-transform anim-word">{word}</span>
     </span>
   )
 }
@@ -42,37 +30,51 @@ export default function AnimText<T extends React.ElementType = 'div'>({
 } & React.ComponentPropsWithoutRef<T>) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Tag: any = as || 'div'
-  const reduced = useReducedMotion() ?? false
-  const ref = useRef<HTMLElement>(null)
+  const containerRef = useRef<HTMLElement>(null)
 
   const isStrOrNum = typeof children === 'string' || typeof children === 'number'
   const isTText = isValidElement(children) && 'tKey' in (children.props as object)
 
-  // ── string: split into words, animate each ──────────────────────────────
+  // ── string: split into words ──────────────────────────────
   const text = String(children)
   const tokens = useMemo(() => text.split(/(\s+)/), [text])
+
+  // ── animation setup ─────────────────────────────────────────────────────
+  useGSAP(
+    () => {
+      const mm = gsap.matchMedia()
+
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        gsap.from('.anim-word', {
+          y: '110%',
+          opacity: 0,
+          duration: 1.2,
+          // Custom ease approximating Framer Motion's [0.22, 1, 0.36, 1]
+          ease: 'power3.out',
+          stagger: Number(stagger),
+          delay: Number(delay),
+        })
+      })
+
+      // For users who prefer reduced motion, we don't need a from() animation
+      // since the default CSS state is visible (opacity 1, y 0).
+
+      return () => mm.revert()
+    },
+    { scope: containerRef, dependencies: [delay, stagger] }
+  )
 
   // ── non-text children: single block reveal ──────────────────────────────
   if (!isStrOrNum && !isTText) {
     return (
-      <Tag ref={ref} className={`relative overflow-hidden leading-[1.05] ${className}`} {...props}>
-        <motion.span
-          className="inline-block will-change-transform [direction:inherit]"
-          initial={reduced ? WORD_VISIBLE : WORD_HIDDEN}
-          animate={WORD_VISIBLE}
-          transition={{ ...WORD_TRANSITION, delay: Number(delay) }}
-        >
-          {children}
-        </motion.span>
+      <Tag ref={containerRef} className={`relative overflow-hidden leading-[1.05] ${className}`} {...props}>
+        <span className="inline-block will-change-transform anim-word [direction:inherit]">{children}</span>
       </Tag>
     )
   }
 
-  // track word index separately (skip whitespace tokens)
-  let wordIdx = -1
-
   return (
-    <Tag ref={ref} className={`relative leading-[1.05] ${className}`} style={{ ...props.style }} {...props}>
+    <Tag ref={containerRef} className={`relative leading-[1.05] ${className}`} style={{ ...props.style }} {...props}>
       {tokens.map((token, i) => {
         if (/^\s+$/.test(token)) {
           // preserve whitespace naturally
@@ -82,10 +84,7 @@ export default function AnimText<T extends React.ElementType = 'div'>({
             </span>
           )
         }
-        wordIdx++
-        const idx = wordIdx
-
-        return <Word key={i} word={token} index={idx} stagger={stagger} delay={delay} reduced={reduced} />
+        return <Word key={i} word={token} />
       })}
     </Tag>
   )
