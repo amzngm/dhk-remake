@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
         <ProjectCard
           imageSrc={projects[0].imageSrc}
           projectTitle={projects[0].title}
-          projectDate={projects[0].date}
+          projectDate={projects[0].year}
           projectLink={`/projects/${projects[0].slug}`}
         />
 
@@ -26,7 +26,7 @@ export default function FeaturedProjects() {
               key={index}
               imageSrc={project.imageSrc}
               projectTitle={project.title}
-              projectDate={project.date}
+              projectDate={project.year}
               projectLink={`/projects/${project.slug}`}
             />
           ))}
@@ -39,12 +39,12 @@ export default function FeaturedProjects() {
 
           <div className="max-lg:hidden"></div>
 
-          {projects.slice(3).map((project, index) => (
+          {projects.slice(3, 5).map((project, index) => (
             <ProjectCard
               key={index}
               imageSrc={project.imageSrc}
               projectTitle={project.title}
-              projectDate={project.date}
+              projectDate={project.year}
               projectLink={`/projects/${project.slug}`}
             />
           ))}

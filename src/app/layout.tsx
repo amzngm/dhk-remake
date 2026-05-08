@@ -102,7 +102,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${helveticaNowDisplay.className}`}>
-      <body className="relative w-full h-full bg-bg selection:bg-[#A07B58] text-text subpixel-antialiased lowercase scroll-smooth">
+      <body className="relative w-dvw h-full overflow-x-hidden bg-bg selection:bg-[#A07B58] text-text subpixel-antialiased lowercase scroll-smooth">
         <AppWrapper>{children}</AppWrapper>
       </body>
     </html>

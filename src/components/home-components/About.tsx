@@ -28,7 +28,7 @@ export default function About() {
         scrollTrigger: {
           trigger: containerRef.current,
           start: 'top 90%',
-          end: 'bottom 20%',
+          end: 'bottom 10%',
           scrub: true,
           invalidateOnRefresh: true,
         },
@@ -51,10 +51,10 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex max-lg:flex-col justify-center lg:justify-between w-full">
+      <div className="flex max-lg:flex-col justify-center lg:justify-between w-full lg:text-lg">
         <span>services</span>
         <div className="lg:w-[58%]">
-          <p className="lg:max-w-lg 2xl:max-w-xl normal-case leading-snug">
+          <p className="lg:max-w-lg 2xl:max-w-2xl normal-case leading-snug">
             We’re architects, urban designers and interior designers. We deliver buildings, public spaces and interiors that are contextually sensitive,
             environmentally responsible and technically resilient.
           </p>

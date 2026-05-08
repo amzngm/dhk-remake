@@ -9,7 +9,7 @@ import ImageSection from '@/components/home-components/ImageSection'
 const OurStory = dynamic(() => import('@/components/home-components/OurStory'))
 import FeaturedProjects from '@/components/home-components/FeaturedProjects'
 const Awards = dynamic(() => import('@/components/home-components/Awards'))
-import Journal from '@/components/home-components/Journal'
+const Journal = dynamic(() => import('@/components/home-components/Journal'))
 
 export default function HomePage() {
   return (

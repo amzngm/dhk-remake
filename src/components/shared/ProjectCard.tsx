@@ -24,7 +24,16 @@ export default function ProjectCard({
       onMouseLeave={() => setIsHovering(false)}
       className="group block relative w-full lg:max-h-200 aspect-4/5 max-md:aspect-square overflow-hidden bg-bg cursor-pointer"
     >
-      {imageSrc && <Image src={imageSrc} alt={projectTitle} fill className="object-cover" />}
+      {imageSrc && (
+        <Image
+          src={imageSrc}
+          alt={projectTitle}
+          fill
+          loading="eager"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1279px) 50vw, 90vw"
+          className="object-cover"
+        />
+      )}
 
       <div className="bottom-0 z-10 absolute flex justify-between items-center w-full bg-bg fl-text-lg/xl normal-case tracking-wide lg:transition-transform lg:group-hover:translate-y-0 lg:translate-y-full lg:duration-200 px-2 py-1">
         {projectTitle && <h6 className="line-clamp-1">{projectTitle}</h6>}

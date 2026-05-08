@@ -5,111 +5,259 @@
       "title2": "Best New Hotel Development",
       "award": "API Awards Winner",
       "date": "2025",
-      "imageSrc": "/images/artp/image-1.webp"
+      "imageSrc": "/images/awards/awards-0.avif"
     },
-
     {
       "title": "Longkloof Precinct",
       "title2": "Best New Mixed-use/Precinct Development",
       "award": "API Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
     },
-
-    { "title": "dhk Website", "title2": "Honors and Site of the Day", "award": "Awwwards Winner", "imageSrc": "/images/artp/image-3.webp" },
-
+    {
+      "title": "dhk Website",
+      "title2": "Honors and Site of the Day",
+      "award": "Awwwards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-3.jpg"
+    },
     {
       "title": "The Rubik",
       "title2": "CIfA Award for Architecture Commendation",
       "award": "CIfA Commendation",
-      "imageSrc": "/images/artp/image-2.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
     },
-
-    { "title": "Longkloof Precinct", "title2": "CIfA Award for Architecture", "award": "CIfA Winner", "imageSrc": "/images/artp/image-5.webp" },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "CIfA Award for Architecture",
+      "award": "CIfA Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
+    },
 
     {
       "title": "dhk Website",
       "title2": "Favourite Website Awards (FWA) of the Day",
       "award": "FWA of the Day Winner",
-      "imageSrc": "/images/artp/image-4.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-5.jpg"
     },
-
     {
       "title": "Brookfield at Royal",
       "title2": "Lifestyle Estate of the Year",
       "award": "Reside Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-1.avif"
     },
-
-    { "title": "The Rubik", "title2": "High Density Urban Living", "award": "CIfA Commendation", "imageSrc": "/images/artp/image-35.webp" },
-
-    {
-      "title": "Canopy by Hilton Cape Town Longkloof",
-      "title2": "Mixed-use Development of the Year",
-      "award": "SAPOA Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
-    },
-
-    {
-      "title": "Canopy by Hilton Cape Town Longkloof",
-      "title2": "Overall Development Award",
-      "award": "SAPOA Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
-    },
+    { "title": "The Rubik", "title2": "High Density Urban Living", "award": "CIfA Commendation", "date": "2025", "imageSrc": "/images/awards/awards-2.avif" },
 
     {
       "title": "Canopy by Hilton Cape Town Longkloof",
       "title2": "Best New Hotel Development",
       "award": "API Awards Winner",
       "date": "2025",
-      "imageSrc": "/images/artp/image-1.webp"
+      "imageSrc": "/images/awards/awards-0.avif"
     },
-
     {
       "title": "Longkloof Precinct",
       "title2": "Best New Mixed-use/Precinct Development",
       "award": "API Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
     },
-
-    { "title": "dhk Website", "title2": "Honors and Site of the Day", "award": "Awwwards Winner", "imageSrc": "/images/artp/image-3.webp" },
-
+    {
+      "title": "dhk Website",
+      "title2": "Honors and Site of the Day",
+      "award": "Awwwards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-3.jpg"
+    },
     {
       "title": "The Rubik",
       "title2": "CIfA Award for Architecture Commendation",
       "award": "CIfA Commendation",
-      "imageSrc": "/images/artp/image-2.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
     },
-
-    { "title": "Longkloof Precinct", "title2": "CIfA Award for Architecture", "award": "CIfA Winner", "imageSrc": "/images/artp/image-5.webp" },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "CIfA Award for Architecture",
+      "award": "CIfA Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
+    },
 
     {
       "title": "dhk Website",
       "title2": "Favourite Website Awards (FWA) of the Day",
       "award": "FWA of the Day Winner",
-      "imageSrc": "/images/artp/image-4.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-5.jpg"
     },
-
     {
       "title": "Brookfield at Royal",
       "title2": "Lifestyle Estate of the Year",
       "award": "Reside Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-1.avif"
     },
-
-    { "title": "The Rubik", "title2": "High Density Urban Living", "award": "CIfA Commendation", "imageSrc": "/images/artp/image-35.webp" },
+    { "title": "The Rubik", "title2": "High Density Urban Living", "award": "CIfA Commendation", "date": "2025", "imageSrc": "/images/awards/awards-2.avif" },
 
     {
       "title": "Canopy by Hilton Cape Town Longkloof",
-      "title2": "Mixed-use Development of the Year",
-      "award": "SAPOA Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
+      "title2": "Best New Hotel Development",
+      "award": "API Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
+    },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "Best New Mixed-use/Precinct Development",
+      "award": "API Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
+    },
+    {
+      "title": "dhk Website",
+      "title2": "Honors and Site of the Day",
+      "award": "Awwwards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-3.jpg"
+    },
+    {
+      "title": "The Rubik",
+      "title2": "CIfA Award for Architecture Commendation",
+      "award": "CIfA Commendation",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
+    },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "CIfA Award for Architecture",
+      "award": "CIfA Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
     },
 
     {
+      "title": "dhk Website",
+      "title2": "Favourite Website Awards (FWA) of the Day",
+      "award": "FWA of the Day Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-5.jpg"
+    },
+    {
+      "title": "Brookfield at Royal",
+      "title2": "Lifestyle Estate of the Year",
+      "award": "Reside Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-1.avif"
+    },
+    { "title": "The Rubik", "title2": "High Density Urban Living", "award": "CIfA Commendation", "date": "2025", "imageSrc": "/images/awards/awards-2.avif" },
+
+    {
       "title": "Canopy by Hilton Cape Town Longkloof",
-      "title2": "Overall Development Award",
-      "award": "SAPOA Awards Winner",
-      "imageSrc": "/images/artp/image-35.webp"
-    }
+      "title2": "Best New Hotel Development",
+      "award": "API Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
+    },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "Best New Mixed-use/Precinct Development",
+      "award": "API Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
+    },
+    {
+      "title": "dhk Website",
+      "title2": "Honors and Site of the Day",
+      "award": "Awwwards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-3.jpg"
+    },
+    {
+      "title": "The Rubik",
+      "title2": "CIfA Award for Architecture Commendation",
+      "award": "CIfA Commendation",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
+    },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "CIfA Award for Architecture",
+      "award": "CIfA Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
+    },
+
+    {
+      "title": "dhk Website",
+      "title2": "Favourite Website Awards (FWA) of the Day",
+      "award": "FWA of the Day Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-5.jpg"
+    },
+    {
+      "title": "Brookfield at Royal",
+      "title2": "Lifestyle Estate of the Year",
+      "award": "Reside Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-1.avif"
+    },
+    { "title": "The Rubik", "title2": "High Density Urban Living", "award": "CIfA Commendation", "date": "2025", "imageSrc": "/images/awards/awards-2.avif" },
+
+    {
+      "title": "Canopy by Hilton Cape Town Longkloof",
+      "title2": "Best New Hotel Development",
+      "award": "API Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
+    },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "Best New Mixed-use/Precinct Development",
+      "award": "API Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-0.avif"
+    },
+    {
+      "title": "dhk Website",
+      "title2": "Honors and Site of the Day",
+      "award": "Awwwards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-3.jpg"
+    },
+    {
+      "title": "The Rubik",
+      "title2": "CIfA Award for Architecture Commendation",
+      "award": "CIfA Commendation",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
+    },
+    {
+      "title": "Longkloof Precinct",
+      "title2": "CIfA Award for Architecture",
+      "award": "CIfA Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-4.avif"
+    },
+
+    {
+      "title": "dhk Website",
+      "title2": "Favourite Website Awards (FWA) of the Day",
+      "award": "FWA of the Day Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-5.jpg"
+    },
+    {
+      "title": "Brookfield at Royal",
+      "title2": "Lifestyle Estate of the Year",
+      "award": "Reside Awards Winner",
+      "date": "2025",
+      "imageSrc": "/images/awards/awards-1.avif"
+    },
+    { "title": "The Rubik", "title2": "High Density Urban Living", "award": "CIfA Commendation", "date": "2025", "imageSrc": "/images/awards/awards-2.avif" }
   ]
 }

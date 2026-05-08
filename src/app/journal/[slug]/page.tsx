@@ -40,7 +40,7 @@ export default function JournalArticlePage({ params }: { params: Promise<{ slug:
         <div className="flex flex-col justify-end min-h-screen p-8">
           <span className="opacity-60 text-sm uppercase tracking-wider">{journal.type}</span>
           <h1 className="max-w-4xl font-semibold text-5xl md:text-6xl mt-4">{journal.title}</h1>
-          <p className="max-w-2xl text-lg leading-relaxed mt-8">{journal.desc}</p>
+          <p dangerouslySetInnerHTML={{ __html: journal.desc }} className="max-w-2xl text-lg leading-relaxed mt-8" />
         </div>
       </div>
     </>

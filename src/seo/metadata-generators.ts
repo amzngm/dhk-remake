@@ -30,22 +30,24 @@ export function createMetadataGenerator(route: string) {
 
 interface ProjectData {
   slug: string
-  name: string
-  tagline: string
-  description: string
   title: string
-  date: string
+  tagline: string
+  description: string[]
+  client?: string
+  status?: string
+  year?: string
+  services?: string
+  tags?: string
+  location?: string
+  country?: string
   imageSrc: string
-  location?: {
-    city?: string
-    country?: string
-  }
-  sector?: string
-  type?: string
+  imageGallery?: { src: string; imageDesc?: string }[]
 }
 
 export function generateProjectMetadata(slug: string): Metadata {
-  const project = (projectsDbData as Record<string, ProjectData>)[slug]
+  // First try to find by slug property, otherwise fallback to object key
+  const projectsValues = Object.values(projectsDbData as Record<string, ProjectData>)
+  const project = projectsValues.find((p) => p.slug === slug) || (projectsDbData as Record<string, ProjectData>)[slug]
 
   if (!project) {
     return {
@@ -56,12 +58,14 @@ export function generateProjectMetadata(slug: string): Metadata {
   }
 
   const seo = generateProjectSEO({
-    name: project.name,
+    name: project.title,
     tagline: project.tagline,
-    description: project.description,
-    location: project.location,
-    sector: project.sector,
-    type: project.type,
+    description: project.description?.[0],
+    location: {
+      country: project.country,
+    },
+    sector: project.services,
+    type: project.tags,
   })
 
   return {

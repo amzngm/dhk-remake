@@ -127,7 +127,9 @@ export default function NavMenu() {
                       ))}
                     </div>
 
-                    {!hoveredLink && <Image src={NAVMEDIA[0].src} alt={NAVMEDIA[0].alt} width={230} height={230} className="right-0 bottom-0 absolute" />}
+                    {!hoveredLink && (
+                      <Image src={NAVMEDIA[0].src} alt={NAVMEDIA[0].alt} width={230} height={230} sizes="230px" className="right-0 bottom-0 absolute" />
+                    )}
                   </div>
                 </div>
               </motion.div>

@@ -5,13 +5,34 @@ export default function CollectionFooter() {
   return (
     <footer className="relative min-h-80 bg-[#232323] fl-m-0/0.5 fl-px-4/5 fl-py-8/4 max-lg:fl-py-8/28">
       <div className="flex max-lg:flex-col justify-between gap-4 max-lg:gap-42">
-        <a href={'https://10ncollective.com/'} target="_blank" rel="noopener noreferrer">
-          <Image src={'/images/logos/10n-collection-logo.svg'} alt="Collection logo" width={115} height={115} className="object-cover" />
-        </a>
+        <div className="flex flex-col justify-between h-full">
+          <a href={'https://10ncollective.com/'} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={'/images/logos/10n-collection-logo.svg'}
+              alt="Collection logo"
+              width={115}
+              height={115}
+              sizes="115px"
+              className="w-auto h-auto object-cover"
+            />
+          </a>
+
+          <a href="https://amzngm.com/" target="_blank" rel="noopener noreferrer" className="group">
+            remade by {` `}
+            <span className="group-hover:text-main">NGM</span>
+          </a>
+        </div>
 
         <div className="flex max-lg:flex-col justify-between gap-4 max-lg:fl-gap-14/44">
           <a href={'https://10ncollective.com/'} target="_blank" rel="noopener noreferrer">
-            <Image src={'/images/logos/10n-collection-text-logo.svg'} alt="Collection logo" width={150} height={150} className="object-cover" />
+            <Image
+              src={'/images/logos/10n-collection-text-logo.svg'}
+              alt="Collection logo"
+              width={150}
+              height={150}
+              sizes="150px"
+              className="w-auto h-auto object-cover"
+            />
           </a>
 
           <ul className="flex flex-col gap-2">
@@ -30,7 +51,14 @@ export default function CollectionFooter() {
           </ul>
 
           <div>
-            <Image src={'/images/collection-para.svg'} alt="Collection logo" width={150} height={150} className="max-lg:w-50 object-cover" />
+            <Image
+              src={'/images/collection-para.svg'}
+              alt="Collection logo"
+              width={150}
+              height={150}
+              sizes="150px"
+              className="w-auto max-lg:w-50 h-auto object-cover"
+            />
           </div>
         </div>
       </div>

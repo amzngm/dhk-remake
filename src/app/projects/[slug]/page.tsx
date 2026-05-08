@@ -30,10 +30,10 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
     <>
       <div className="h-screen bg-bg text-text">
         <div className="flex flex-col justify-end h-full p-8">
-          <h1 className="font-semibold text-6xl">{project.name}</h1>
+          <h1 className="font-semibold text-6xl">{project.title}</h1>
           <p className="text-2xl mt-4">{project.tagline}</p>
-          <p className="max-w-2xl text-lg mt-8">{project.description}</p>
-          {project.date && <span className="text-lg mt-8">Year: {project.date}</span>}
+          <p className="max-w-2xl text-lg mt-8">{project.description?.[0]}</p>
+          {project.year && <span className="text-lg mt-8">Year: {project.year}</span>}
         </div>
       </div>
     </>

@@ -49,22 +49,19 @@ export default function Awards() {
       <div className="flex max-lg:flex-col justify-between items-start gap-44 max-lg:gap-24 size-full">
         <h4 className="font-semibold fl-text-4xl/7xl leading-none tracking-wide shrink">Awards</h4>
 
-        <ul onMouseMove={handleMouseMove} className="flex flex-col justify-between gap-2 w-full max-w-4xl min-h-120 normal-case">
+        <ul onMouseMove={handleMouseMove} className="flex flex-col justify-between gap-2 w-full max-w-5xl max-lg:fl-text-base/lg text-lg normal-case">
           {awards.slice(0, displayCount).map((award: Award, index: number) => (
-            <li key={index} className="group relative flex justify-between cursor-pointer">
-              <div>
-                <h6 className="max-lg:flex max-lg:flex-col max-lg:gap-2 opacity-30 group-hover:opacity-100">
-                  <span className={`${award.date ? 'me-22' : ''}`}>{award.date}</span>
-                  <span className="max-lg:opacity-55">{award.title}</span>
+            <li key={index} className="group relative flex justify-between text-main/50 hover:text-text cursor-pointer">
+              <div className="flex justify-between fl-gap-2/22">
+                <span>{award.date}</span>
+                <h6>
+                  <span>{award.title}</span>
+                  <span className="hidden lg:group-hover:block">{award.title2}</span>
                 </h6>
-
-                <h6 className="hidden lg:group-hover:block">{award.title2}</h6>
               </div>
 
-              <div>
-                <h6 className="max-lg:hidden opacity-20 group-hover:opacity-100">{award.award}</h6>
-                <span className="lg:hidden opacity-10 group-hover:opacity-25">[ + ]</span>
-              </div>
+              <h6 className="max-lg:hidden">{award.award}</h6>
+              <span className="lg:hidden fl-text-sm/xl whitespace-nowrap">[ + ]</span>
 
               <div
                 ref={(el) => {
@@ -72,7 +69,7 @@ export default function Awards() {
                 }}
                 className="max-lg:hidden top-0 right-[105%] absolute size-45 bg-main opacity-0 group-hover:opacity-100 transition-opacity"
               >
-                <Image src={award.imageSrc} alt={award.title} fill className="object-cover" />
+                <Image src={award.imageSrc} alt={award.title} fill sizes="(max-width: 1023px) 100vw, (max-width: 1279px) 50vw, 33vw" className="object-cover" />
               </div>
             </li>
           ))}
