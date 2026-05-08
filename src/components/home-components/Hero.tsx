@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { gsap, ScrollTrigger } from '@/utils/gsapConfig'
 import { useGSAP } from '@gsap/react'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
@@ -27,7 +28,9 @@ const INITIAL_INSET_PERCENT = [100, 160, 260, 320] as const
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
+  const navbarRef = useRef<HTMLDivElement>(null)
   const scrollPosition = useScrollPosition(0.1)
+  const [isSticky, setIsSticky] = useState(false)
 
   useGSAP(
     () => {
@@ -68,6 +71,21 @@ export default function Hero() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!navbarRef.current) return
+      const rect = navbarRef.current.getBoundingClientRect()
+      if (rect.top <= 0) {
+        setIsSticky(true)
+      } else {
+        setIsSticky(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <section ref={sectionRef} className="relative w-dvw h-dvh">
       {/* clippath images */}
@@ -97,7 +115,18 @@ export default function Hero() {
         ))}
       </div>
 
-      <Navbar />
+      <div ref={navbarRef} className="z-50 relative">
+        {isSticky && typeof document !== 'undefined' ? (
+          createPortal(
+            <div className="top-0 z-50 fixed">
+              <Navbar />
+            </div>,
+            document.body
+          )
+        ) : (
+          <Navbar />
+        )}
+      </div>
 
       {/* hero footer */}
       <div style={{ opacity: scrollPosition ? 0 : 1 }} className="max-lg:opacity-100! transition-opacity duration-600">

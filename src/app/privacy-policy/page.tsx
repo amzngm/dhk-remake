@@ -1,6 +1,4 @@
 import { metadataGenerators } from '@/seo/metadata-generators'
-import AnimIn from '@/components/ui/unstyled/AnimIn'
-import AnimText from '@/components/ui/unstyled/AnimText'
 
 export const generateMetadata = metadataGenerators.privacyPolicy
 
@@ -9,11 +7,9 @@ export default function PrivacyPolicyPage() {
     <main className="relative w-full min-h-dvh overflow-hidden bg-bg text-text p-12 max-md:px-4 pb-32">
       <h1 className="font-sec text-[5vw] max-md:text-[10vw] max-lg:text-[8vw] text-center ltr:leading-[0.95] rtl:leading-24 tracking-tight">Privacy Policy</h1>
 
-      <AnimText as="p" delay={0.2} className="font-light text-center italic">
-        Last updated: {new Date().toLocaleDateString()}
-      </AnimText>
+      <p className="font-light text-center italic">Last updated: {new Date().toLocaleDateString()}</p>
 
-      <AnimIn delay={0.3} className="space-y-6 text-center mt-12">
+      <div className="space-y-6 text-center mt-12">
         <h2 className="font-sec text-3xl">Introduction</h2>
         <div className="space-y-4 font-light text-text/70 text-lg normal-case leading-relaxed">
           <p>
@@ -21,10 +17,10 @@ export default function PrivacyPolicyPage() {
             visit our website and use our services.
           </p>
         </div>
-      </AnimIn>
+      </div>
 
       <div className="space-y-16 mt-12">
-        <AnimIn delay={0.4} className="space-y-6">
+        <div className="space-y-6">
           <h2 className="font-sec text-3xl">Information We Collect</h2>
           <div className="gap-8 grid md:grid-cols-3">
             <div className="bg-main/25 border rounded-lg p-8">
@@ -46,9 +42,9 @@ export default function PrivacyPolicyPage() {
               </p>
             </div>
           </div>
-        </AnimIn>
+        </div>
 
-        <AnimIn delay={0.5} className="space-y-6">
+        <div className="space-y-6">
           <h2 className="font-sec text-3xl">How We Use Your Information</h2>
           <ul className="gap-4 grid md:grid-cols-2">
             {[
@@ -64,24 +60,24 @@ export default function PrivacyPolicyPage() {
               </li>
             ))}
           </ul>
-        </AnimIn>
+        </div>
 
-        <AnimIn delay={0.6} className="space-y-6">
+        <div className="space-y-6">
           <h2 className="font-sec text-3xl">Information Sharing</h2>
           <p className="font-light text-text/70 text-lg normal-case">
             We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy.
           </p>
-        </AnimIn>
+        </div>
 
-        <AnimIn delay={0.7} className="space-y-6">
+        <div className="space-y-6">
           <h2 className="font-sec text-3xl">Data Security</h2>
           <p className="font-light text-text/70 text-lg normal-case">
             We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration,
             disclosure, or destruction.
           </p>
-        </AnimIn>
+        </div>
 
-        <AnimIn delay={0.8} className="space-y-6">
+        <div className="space-y-6">
           <h2 className="font-sec text-3xl">Contact Us</h2>
           <div className="inline-block w-full bg-main/25 border rounded-3xl normal-case p-10">
             <p className="mb-6">If you have any questions about this Privacy Policy, please contact us at:</p>
@@ -95,7 +91,7 @@ export default function PrivacyPolicyPage() {
               <p>Address: Dubai, UAE</p>
             </div>
           </div>
-        </AnimIn>
+        </div>
       </div>
     </main>
   )
