@@ -8,7 +8,6 @@ export const metadata = metadataGenerators.projects()
 export default function ProjectsPage() {
   return (
     <>
-      <div className="h-60"></div>
       <AllProjects />
     </>
   )

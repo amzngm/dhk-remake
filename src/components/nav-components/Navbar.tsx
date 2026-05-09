@@ -12,7 +12,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <nav className="z-10 relative w-dvw font-medium fl-px-4/5 py-4">
+    <nav className={`z-10 w-dvw font-medium fl-px-4/5 py-4 ${pathname === '/' ? 'relative' : 'fixed top-0'}`}>
       <div className="flex justify-between">
         <Indicator active={pathname === '/'}>
           <Link href={'/'} className="tracking-wide cursor-default">

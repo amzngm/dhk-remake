@@ -74,6 +74,28 @@ export default function AllProjects() {
   const [isGrid, setIsGrid] = useState(true)
   const [hasShownList, setHasShownList] = useState(false)
 
+  const filters = [
+    'all projects',
+    'architecture',
+    'interior design',
+    'urban design',
+    'sustainable',
+    'retail',
+    'residential',
+    'public + education',
+    'office',
+    'mixed-use',
+    'hospitality',
+  ]
+  const [selectedFilter, setSelectedFilter] = useState('all projects')
+
+  const filteredProjects = allProjects.projects.filter((project) => {
+    if (selectedFilter === 'all projects') return true
+    const s = (project.services || '').toLowerCase()
+    const t = (project.tags || '').toLowerCase()
+    return s.includes(selectedFilter) || t.includes(selectedFilter)
+  })
+
   const toggle = () => {
     setIsGrid((prev) => !prev)
     setHasShownList(true)
@@ -87,7 +109,7 @@ export default function AllProjects() {
       items.forEach((item) => {
         mm.add('(min-width: 1024px)', () => {
           gsap.from(item, {
-            height: 50,
+            height: 140,
             ease: 'none',
 
             scrollTrigger: {
@@ -100,13 +122,60 @@ export default function AllProjects() {
         })
       })
     },
-    { dependencies: [isGrid] }
+    { dependencies: [isGrid, selectedFilter] }
   )
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.filter-item',
+      start: 'top -20%',
+      toggleActions: 'play none none reverse',
+    },
+  })
+
+  useGSAP(() => {
+    tl.to('.filter-item', {
+      opacity: 0,
+      y: '-100%',
+      pointerEvents: 'none',
+      duration: 0,
+    })
+    tl.to(
+      '.filter-icon',
+      {
+        rotate: 360,
+        duration: 0,
+      },
+      '<'
+    )
+  })
 
   return (
     <MouseFollower className="w-dvw" text="[ view project ]">
+      <div className="top-4 z-10 sticky flex flex-col flex-wrap content-end w-full lg:max-w-[32.5%] h-100 lg:me-auto">
+        {filters.map((filter, index) => (
+          <AnimText
+            as="button"
+            key={filter}
+            onClick={() => setSelectedFilter(filter)}
+            className={`relative flex items-center ps-10 pb-2 cursor-pointer ${index !== 0 ? 'filter-item' : ''}`}
+          >
+            {selectedFilter === filter && (
+              <span className="-left-9 absolute filter-icon whitespace-nowrap rotate-180 me-2">
+                [{' '}
+                <svg className="inline-block size-3 mt-1">
+                  <path d="M11 1L6 6L1 1" stroke="currentColor" strokeWidth="2"></path>
+                </svg>{' '}
+                ]
+              </span>
+            )}
+            <span>{filter}</span>
+          </AnimText>
+        ))}
+      </div>
+
       <section className={`relative w-dvw min-h-dvh bg-bg text-text py-4 ${isGrid ? 'fl-ps-4/5 pe-0 max-lg:fl-px-4/5' : 'fl-px-4/5'}`}>
-        <div className="flex max-lg:flex-col-reverse justify-between items-start h-60 max-lg:min-h-80 my-8">
+        <div className="flex max-lg:flex-col-reverse justify-between items-start h-60 max-lg:min-h-80 my-12">
           <div className="flex max-lg:flex-col-reverse justify-between lg:items-end w-full max-lg:h-full">
             <button onClick={toggle} className="flex gap-1">
               <AnimText className={`${isGrid ? 'text-text' : 'text-main'} cursor-pointer`}>grid</AnimText>
@@ -121,20 +190,20 @@ export default function AllProjects() {
         </div>
 
         <div className={isGrid ? 'block' : 'hidden'}>
-          {allProjects.projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <ProjectGridItem key={project.slug || index} project={project} />
           ))}
         </div>
 
         {hasShownList && (
           <div className={!isGrid ? 'block' : 'hidden'}>
-            {allProjects.projects.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <ProjectListItem key={project.slug || index} project={project} index={index} />
             ))}
           </div>
         )}
 
-        <div className="w-full lg:max-w-[75%] lg:ms-auto mt-22">
+        <div className="z-30 relative w-full lg:max-w-[75%] lg:ms-auto mt-22">
           <BackToTopBtn />
         </div>
       </section>
