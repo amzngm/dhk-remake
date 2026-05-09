@@ -43,11 +43,11 @@ function ProjectGridItem({ project }: { project: (typeof allProjects.projects)[n
 
 function ProjectListItem({ project, index }: { project: (typeof allProjects.projects)[number]; index: number }) {
   return (
-    <Link href={`/projects/${project.slug}`} className="group w-full cursor-pointer">
-      <div className="grid grid-cols-8 max-lg:grid-cols-2 w-full lg:max-w-[75%] text-main group-hover:text-text normal-case ms-auto lg:py-2">
-        <span className="max-lg:hidden col-span-1">0{index + 1}</span>
+    <Link href={`/projects/${project.slug}`} className="group w-full cursor-pointer project-list-item">
+      <div className="grid grid-cols-8 max-lg:grid-cols-2 w-full lg:max-w-[75%] text-main/60 group-data-[active=true]:text-text group-hover:text-text normal-case ms-auto py-4 lg:py-2">
+        <AnimText className="max-lg:hidden col-span-1">0{index + 1}</AnimText>
 
-        <AnimText as="h3" className="col-span-2">
+        <AnimText as="h3" className="lg:col-span-2">
           {project.title}
         </AnimText>
 
@@ -55,7 +55,7 @@ function ProjectListItem({ project, index }: { project: (typeof allProjects.proj
           {project.services}
         </AnimText>
 
-        <div className="flex justify-end gap-2 col-span-3">
+        <div className="flex justify-end gap-2 lg:col-span-3">
           <AnimText as="p">{project.tagline}</AnimText>
           <AnimText>{project.year}</AnimText>
         </div>
@@ -121,6 +121,21 @@ export default function AllProjects() {
           })
         })
       })
+
+      const listItems = gsap.utils.toArray<HTMLAnchorElement>('.project-list-item')
+      listItems.forEach((item) => {
+        gsap.to(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 55%',
+            end: 'bottom 56%',
+            onEnter: () => item.setAttribute('data-active', 'true'),
+            onLeave: () => item.setAttribute('data-active', 'false'),
+            onEnterBack: () => item.setAttribute('data-active', 'true'),
+            onLeaveBack: () => item.setAttribute('data-active', 'false'),
+          },
+        })
+      })
     },
     { dependencies: [isGrid, selectedFilter] }
   )
@@ -152,7 +167,7 @@ export default function AllProjects() {
 
   return (
     <MouseFollower className="w-dvw" text="[ view project ]">
-      <div className="top-5 z-10 sticky flex flex-col flex-wrap max-lg:items-center lg:content-end w-[70%] lg:w-full lg:max-w-[32.5%] h-90 max-lg:mx-auto lg:me-auto">
+      <div className="top-5 z-10 sticky flex flex-col flex-wrap max-lg:items-center lg:content-end w-[70%] lg:w-full lg:max-w-[32.5%] h-100 max-lg:mx-auto lg:me-auto">
         {filters.map((filter, index) => (
           <AnimText
             as="button"
