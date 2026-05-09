@@ -140,18 +140,19 @@ export default function AllProjects() {
     { dependencies: [isGrid, selectedFilter] }
   )
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.filter-item',
-      start: 'top -20%',
-      toggleActions: 'play none none reverse',
-    },
-  })
-
   useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.filter-item',
+        start: 'top -20%',
+        toggleActions: 'play none none reverse',
+      },
+    })
+
     tl.to('.filter-item', {
       opacity: 0,
-      y: '-100%',
+      height: 0,
+      paddingBottom: 0,
       pointerEvents: 'none',
       duration: 0,
     })
@@ -167,7 +168,7 @@ export default function AllProjects() {
 
   return (
     <MouseFollower className="w-dvw" text="[ view project ]">
-      <div className="top-5 z-10 sticky flex flex-col flex-wrap max-lg:items-center lg:content-end w-[70%] lg:w-full lg:max-w-[32.5%] h-100 max-lg:mx-auto lg:me-auto">
+      <div className="top-5 z-10 sticky flex flex-col flex-wrap max-lg:items-center lg:content-end w-[70%] lg:w-full lg:max-w-[32.5%] h-fit overflow-hidden max-lg:mx-auto lg:me-auto">
         {filters.map((filter, index) => (
           <AnimText
             as="button"

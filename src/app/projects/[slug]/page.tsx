@@ -1,14 +1,17 @@
+import dynamic from 'next/dynamic'
 import { Metadata } from 'next'
 import { use } from 'react'
 import { generateProjectMetadata } from '@/seo/metadata-generators'
 import projectsDbData from '@/db/projects.json'
+
+const ProjrctGallery = dynamic(() => import('@/components/projects-components/ProjrctGallery'))
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
   const metadata = generateProjectMetadata(slug)
 
   return {
-    title: metadata.title,
+    title: `dhk - ${metadata.title}`,
     description: metadata.description,
     keywords: metadata.keywords,
   }
@@ -27,15 +30,8 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
   }
 
   return (
-    <>
-      <div className="h-screen bg-bg text-text">
-        <div className="flex flex-col justify-end h-full p-8">
-          <h1 className="font-semibold text-6xl">{project.title}</h1>
-          <p className="text-2xl mt-4">{project.tagline}</p>
-          <p className="max-w-2xl text-lg mt-8">{project.description?.[0]}</p>
-          {project.year && <span className="text-lg mt-8">Year: {project.year}</span>}
-        </div>
-      </div>
-    </>
+    <main className="hide-footer hide-nav">
+      <ProjrctGallery project={project} />
+    </main>
   )
 }

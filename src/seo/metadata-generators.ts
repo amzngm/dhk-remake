@@ -45,9 +45,7 @@ interface ProjectData {
 }
 
 export function generateProjectMetadata(slug: string): Metadata {
-  // First try to find by slug property, otherwise fallback to object key
-  const projectsValues = Object.values(projectsDbData as Record<string, ProjectData>)
-  const project = projectsValues.find((p) => p.slug === slug) || (projectsDbData as Record<string, ProjectData>)[slug]
+  const project = projectsDbData.projects.find((p) => p.slug === slug)
 
   if (!project) {
     return {
