@@ -38,6 +38,13 @@ export const SEO = {
     ],
   },
 
+  '/studio': {
+    title: 'dhk - Studio',
+    description:
+      'Discover the dhk studio. Our team comprises multidisciplinary design professionals, technologists, BIM experts, architectural visualisers and graphic designers. We stay curious, always. We collaborate. We nurture talent. We design for the future. Part of 10N by Egis.',
+    keywords: ['dhk', 'studio', 'design process', 'our space', 'BIM', 'design team', '10N collective', 'Egis'],
+  },
+
   '/careers': {
     title: 'careers - dhk',
     description:
@@ -67,13 +74,6 @@ export const SEO = {
     description:
       'Insights, news, and stories from dhk. Stay updated with our latest projects, industry trends, design thinking, and our journey as part of the 10N collective by Egis.',
     keywords: ['dhk', 'journal', 'blog', 'news', 'design insights', 'architecture news', '10N collective', 'Egis'],
-  },
-
-  '/studio': {
-    title: 'studio - dhk',
-    description:
-      'Discover the dhk studio. Our team comprises multidisciplinary design professionals, technologists, BIM experts, architectural visualisers and graphic designers. We stay curious, always. We collaborate. We nurture talent. We design for the future. Part of 10N by Egis.',
-    keywords: ['dhk', 'studio', 'design process', 'our space', 'BIM', 'design team', '10N collective', 'Egis'],
   },
 
   '/privacy-policy': {

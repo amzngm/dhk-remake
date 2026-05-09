@@ -12,16 +12,27 @@ export default function StudioHero() {
   useGSAP(
     () => {
       if (!sectionRef.current) return
+      const mm = gsap.matchMedia()
 
-      gsap.to('.parallax-content', {
-        y: 500,
-
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top top',
-          scrub: true,
+      mm.add(
+        {
+          isMobile: '(max-width: 1024px)',
+          isDesktop: '(min-width: 1025px)',
         },
-      })
+        (context) => {
+          const isMobile = context.conditions?.isMobile ?? false
+
+          gsap.to('.parallax-content', {
+            y: isMobile ? 360 : 500,
+
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: 'top top',
+              scrub: true,
+            },
+          })
+        }
+      )
     },
     { scope: sectionRef }
   )
