@@ -15,8 +15,8 @@ export default function NavbarWrapper() {
   return (
     <>
       {pathname !== '?' && (
-        <Link href={'/'} className="top-0 left-0 z-9999 fixed size-40 opacity-0 hover:opacity-100 tracking-wide cursor-pointer">
-          <Image src={'/images/logos/main-logo.webp'} alt="Home Logo" fill loading="eager" className="object-cover" />
+        <Link href={'/'} className="max-lg:hidden top-0 left-0 z-9999 fixed size-40 opacity-0 hover:opacity-100 tracking-wide cursor-pointer">
+          <Image src={'/images/logos/main-logo.webp'} alt="Home Logo" fill loading="eager" sizes="100dvw" className="object-cover" />
         </Link>
       )}
 

@@ -152,13 +152,13 @@ export default function AllProjects() {
 
   return (
     <MouseFollower className="w-dvw" text="[ view project ]">
-      <div className="top-4 z-10 sticky flex flex-col flex-wrap content-end w-full lg:max-w-[32.5%] h-100 lg:me-auto">
+      <div className="top-5 z-10 sticky flex flex-col flex-wrap max-lg:items-center lg:content-end w-[70%] lg:w-full lg:max-w-[32.5%] h-90 max-lg:mx-auto lg:me-auto">
         {filters.map((filter, index) => (
           <AnimText
             as="button"
             key={filter}
             onClick={() => setSelectedFilter(filter)}
-            className={`relative flex items-center ps-10 pb-2 cursor-pointer ${index !== 0 ? 'filter-item' : ''}`}
+            className={`relative flex items-center max-lg:w-full max-lg:max-w-2xl tracking-wide max-sm:max-w-sm max-lg:ms-auto max-sm:me-auto ps-10 pb-2 cursor-pointer ${index !== 0 ? 'filter-item' : ''}`}
           >
             {selectedFilter === filter && (
               <span className="-left-9 absolute filter-icon whitespace-nowrap rotate-180 me-2">
@@ -183,7 +183,7 @@ export default function AllProjects() {
               <AnimText className={`${!isGrid ? 'text-text' : 'text-main'} cursor-pointer`}>list</AnimText>
             </button>
 
-            <AnimText as="h1" className="w-full max-w-[75%] font-bold max-lg:text-5xl text-7xl">
+            <AnimText as="h1" className="w-full max-w-[75%] font-bold max-lg:text-5xl text-7xl tracking-wide">
               All Projects
             </AnimText>
           </div>
