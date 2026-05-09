@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params)
-  const project = Object.values(projectsDbData).find((p) => p.slug === slug)
+  const project = projectsDbData.projects.find((p) => p.slug === slug)
 
   if (!project) {
     return (

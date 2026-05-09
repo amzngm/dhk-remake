@@ -7,6 +7,7 @@ import { gsap } from '@/utils/gsapConfig'
 import { useGSAP } from '@gsap/react'
 import { createPortal } from 'react-dom'
 import { useIsMounted } from 'usehooks-ts'
+import { usePathname } from 'next/navigation'
 import AnimText from '@/components/ui/unstyled/AnimText'
 import Indicator from '@/components/ui/effects/Indicator'
 import NewsletterForm from '@/components/nav-components/NewsletterForm'
@@ -34,6 +35,14 @@ export default function NavMenu() {
   const [isRendered, setIsRendered] = useState(false)
   const overlayRef = useRef<HTMLDivElement>(null)
   const isMounted = useIsMounted()
+  const pathname = usePathname()
+  const [prevPathname, setPrevPathname] = useState(pathname)
+
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname)
+    setIsOpen(false)
+  }
+
   const toggle = () => {
     if (isOpen) {
       setIsOpen(false)

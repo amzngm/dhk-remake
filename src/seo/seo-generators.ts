@@ -20,6 +20,24 @@ export const SEO = {
     ],
   },
 
+  '/projects': {
+    title: 'dhk - Projects',
+    description:
+      "Explore dhk's portfolio of award-winning projects. We deliver buildings, public spaces and interiors that are contextually sensitive, environmentally responsible and technically resilient. Featured: VOC Luxury Living, City Park, Conradie Park, Longkloof Precinct, The Signature, The Rubik.",
+    keywords: [
+      'dhk',
+      'projects',
+      'portfolio',
+      'architecture projects',
+      'interior design',
+      'urban design',
+      'VOC Luxury Living',
+      'Conradie Park',
+      'Longkloof',
+      'award-winning',
+    ],
+  },
+
   '/careers': {
     title: 'careers - dhk',
     description:
@@ -42,24 +60,6 @@ export const SEO = {
     title: 'contact - dhk',
     description: "Get in touch with dhk design studio. Let's discuss your project and explore how we can bring your vision to life.",
     keywords: ['dhk', 'contact', 'get in touch', 'design studio contact', 'architecture inquiry', 'interior design consultation'],
-  },
-
-  '/projects': {
-    title: 'projects - dhk',
-    description:
-      "Explore dhk's portfolio of award-winning projects. We deliver buildings, public spaces and interiors that are contextually sensitive, environmentally responsible and technically resilient. Featured: VOC Luxury Living, City Park, Conradie Park, Longkloof Precinct, The Signature, The Rubik.",
-    keywords: [
-      'dhk',
-      'projects',
-      'portfolio',
-      'architecture projects',
-      'interior design',
-      'urban design',
-      'VOC Luxury Living',
-      'Conradie Park',
-      'Longkloof',
-      'award-winning',
-    ],
   },
 
   '/journal': {

@@ -31,7 +31,7 @@ const helveticaNowDisplay = localFont({
 export const metadata = {
   title: {
     default: 'dhk | architects, urban designers, interior designers',
-    template: '%s | dhk',
+    template: '%s',
   },
   description:
     "We create exceptional environments that enhance the human experience. dhk is a design-led studio of architects, urban designers and interior designers delivering buildings, public spaces and interiors that are contextually sensitive, environmentally responsible and technically resilient. Established in 1998, we're part of 10N, a collective created by Egis.",

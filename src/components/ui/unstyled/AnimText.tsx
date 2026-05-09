@@ -18,7 +18,7 @@ export default function AnimText<T extends React.ElementType = 'div'>({
   children,
   className = '',
   as,
-  delay = 0.3,
+  delay = 0.4,
   stagger = 0.06,
   ...props
 }: {

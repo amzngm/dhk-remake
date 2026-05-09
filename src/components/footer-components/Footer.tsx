@@ -53,7 +53,7 @@ export default function Footer() {
 
           <NewsletterForm />
 
-          <Link href="/contact" className="max-lg:order-first max-lg:col-span-2 hover:bg-text whitespace-nowrap cursor-pointer">
+          <Link href="/contact" className="max-lg:order-first max-lg:col-span-2 w-fit hover:bg-text whitespace-nowrap py-0.5 cursor-pointer">
             <AnimText>
               [<span className="hover:text-bg tracking-wide px-10">Contact us</span>]
             </AnimText>

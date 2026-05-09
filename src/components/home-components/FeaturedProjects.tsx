@@ -6,7 +6,7 @@ import MouseFollower from '@/components/shared/MouseFollower'
 import projectsData from '@/db/projects.json'
 
 export default function FeaturedProjects() {
-  const projects = Object.values(projectsData)
+  const projects = projectsData.projects.slice(0, 5)
 
   return (
     <MouseFollower className="w-dvw">

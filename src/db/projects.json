@@ -1,174 +1,175 @@
 {
-  "radisson-red": {
-    "slug": "voc-luxury-living",
-    "title": "VOC Luxury Living",
-    "tagline": "Vila Real de Santo António, Portugal",
-    "description": [
-      "We were commissioned to design a Village of Care in Vila Real de Santo António, in Algarve, Portugal. This first-of-its-kind retirement estate would be fully integrated in the surrounding town. The scheme comprised 600 independent living units, an ERPI centre (residential centre for the elderly), various food and beverage offerings, a fitness centre and a small medical health centre.",
-      "The urban design concept set out the structuring development principles and established the conceptual masterplan for the scheme. It included a public open space strategy and proposed a land use plan and a series of development guidelines to inform the architectural design components.",
-      "‍Pedestrian street and walkways The masterplan proposed a generous pedestrianised street which connected a network of pedestrian walkways throughout the development. This network of spaces and places was designed to be used by pedestrians and cyclists only. Key pedestrian street characteristics included:",
-      "Surface treatments that emphasised the village’s pedestrian-first character Street furniture, artwork, seating, tables, benches, trees, landscaping and cycle racks Water fountains to add character and support a range of activitiy Appropriate lighting to support a safe environment",
-      "Central piazza The masterplan proposed a new central piazza within the development, envisaged as the main gathering space for community events and daily public functions. This was conceived as a predominantly hard-surfaced square with breakaway lawn spaces, strategic planting, concession space extending to retail edges, defined seating areas, tree planting and general street furniture.",
-      "Internal courtyards The masterplan suggested perimeter block buildings, each surrounding courtyards which functioned as vital semi-private/public spaces for building residents to use either actively or passively.",
-      "River-front promenade for passive recreation The public river-front promenade space was envisioned as key to the social functioning of not only the development itself but also the surrounding town. This space was proposed as a linear park reconnecting the community to the waterfront and providing much-needed public open space for local residents. The proposal also incorporated a series of spaces that offered passive and programmed recreational opportunities."
-    ],
-    "client": "private",
-    "status": "proposed",
-    "year": "2020",
-    "services": "urban design, architecture",
-    "tags": "urban design, residential, mixed-use, architecture",
-    "location": "https://www.google.com/maps/place/Vila+Real+de+Santo+Ant%C3%B3nio,+Portugal/@37.1881879,-7.460127,13z/data=!3m1!4b1!4m6!3m5!1s0xd102263fcfb7c35:0xdc001500c93e1f9a!8m2!3d37.1937766!4d-7.4207879!16zL20vMDZ6M2Rq?coh=277534&entry=tts&g_ep=EgoyMDI1MTExNi4wIMuAESoASAFQAw%3D%3D&skid=668be438-35dd-4151-8f71-5253cc7c0a34",
-    "country": "Portugal",
-    "imageSrc": "/images/projects/voc/voc-5.jpg",
-    "imageGallery": [
-      { "src": "/images/projects/voc/voc-1.jpg" },
-      { "src": "/images/projects/voc/voc-2.jpg" },
-      { "src": "/images/projects/voc/voc-3.jpg", "imageDesc": "precinct structuring principles" },
-      { "src": "/images/projects/voc/voc-4.jpg", "imageDesc": "conceptual masterplan - proposed landuse" },
-      { "src": "/images/projects/voc/voc-5.jpg", "imageDesc": "illustrative view of promenade + piazza from river" },
-      { "src": "/images/projects/voc/voc-6.jpg", "imageDesc": "precinct strategy" },
-      { "src": "/images/projects/voc/voc-7.jpg", "imageDesc": "conceptual + architectural render" },
-      { "src": "/images/projects/voc/voc-8.jpg" },
-      { "src": "/images/projects/voc/voc-9.jpg", "imageDesc": "typical facade study" },
-      { "src": "/images/projects/voc/voc-10.jpg", "imageDesc": "view of inner-piazza towards chapel" },
-      { "src": "/images/projects/voc/voc-11.jpg", "imageDesc": "conceptual view from river terraces" }
-    ]
-  },
+  "projects": [
+    {
+      "slug": "voc-luxury-living",
+      "title": "VOC Luxury Living",
+      "tagline": "Vila Real de Santo António, Portugal",
+      "description": [
+        "We were commissioned to design a Village of Care in Vila Real de Santo António, in Algarve, Portugal. This first-of-its-kind retirement estate would be fully integrated in the surrounding town. The scheme comprised 600 independent living units, an ERPI centre (residential centre for the elderly), various food and beverage offerings, a fitness centre and a small medical health centre.",
+        "The urban design concept set out the structuring development principles and established the conceptual masterplan for the scheme. It included a public open space strategy and proposed a land use plan and a series of development guidelines to inform the architectural design components.",
+        "‍Pedestrian street and walkways The masterplan proposed a generous pedestrianised street which connected a network of pedestrian walkways throughout the development. This network of spaces and places was designed to be used by pedestrians and cyclists only. Key pedestrian street characteristics included:",
+        "Surface treatments that emphasised the village’s pedestrian-first character Street furniture, artwork, seating, tables, benches, trees, landscaping and cycle racks Water fountains to add character and support a range of activitiy Appropriate lighting to support a safe environment",
+        "Central piazza The masterplan proposed a new central piazza within the development, envisaged as the main gathering space for community events and daily public functions. This was conceived as a predominantly hard-surfaced square with breakaway lawn spaces, strategic planting, concession space extending to retail edges, defined seating areas, tree planting and general street furniture.",
+        "Internal courtyards The masterplan suggested perimeter block buildings, each surrounding courtyards which functioned as vital semi-private/public spaces for building residents to use either actively or passively.",
+        "River-front promenade for passive recreation The public river-front promenade space was envisioned as key to the social functioning of not only the development itself but also the surrounding town. This space was proposed as a linear park reconnecting the community to the waterfront and providing much-needed public open space for local residents. The proposal also incorporated a series of spaces that offered passive and programmed recreational opportunities."
+      ],
+      "client": "private",
+      "status": "proposed",
+      "year": "2020",
+      "services": "urban design, architecture",
+      "tags": "urban design, residential, mixed-use, architecture",
+      "location": "https://www.google.com/maps/place/Vila+Real+de+Santo+Ant%C3%B3nio,+Portugal/@37.1881879,-7.460127,13z/data=!3m1!4b1!4m6!3m5!1s0xd102263fcfb7c35:0xdc001500c93e1f9a!8m2!3d37.1937766!4d-7.4207879!16zL20vMDZ6M2Rq?coh=277534&entry=tts&g_ep=EgoyMDI1MTExNi4wIMuAESoASAFQAw%3D%3D&skid=668be438-35dd-4151-8f71-5253cc7c0a34",
+      "country": "Portugal",
+      "imageSrc": "/images/projects/voc/voc-5.jpg",
+      "imageGallery": [
+        { "src": "/images/projects/voc/voc-1.jpg" },
+        { "src": "/images/projects/voc/voc-2.jpg" },
+        { "src": "/images/projects/voc/voc-3.jpg", "imageDesc": "precinct structuring principles" },
+        { "src": "/images/projects/voc/voc-4.jpg", "imageDesc": "conceptual masterplan - proposed landuse" },
+        { "src": "/images/projects/voc/voc-5.jpg", "imageDesc": "illustrative view of promenade + piazza from river" },
+        { "src": "/images/projects/voc/voc-6.jpg", "imageDesc": "precinct strategy" },
+        { "src": "/images/projects/voc/voc-7.jpg", "imageDesc": "conceptual + architectural render" },
+        { "src": "/images/projects/voc/voc-8.jpg" },
+        { "src": "/images/projects/voc/voc-9.jpg", "imageDesc": "typical facade study" },
+        { "src": "/images/projects/voc/voc-10.jpg", "imageDesc": "view of inner-piazza towards chapel" },
+        { "src": "/images/projects/voc/voc-11.jpg", "imageDesc": "conceptual view from river terraces" }
+      ]
+    },
 
-  "city-park-mama-shelter-hotel-and-residences": {
-    "slug": "city-park-mama-shelter-hotel-and-residences",
-    "title": "City Park/Mama Shelter Hotel and Residences",
-    "tagline": "Cape Town, South Africa",
-    "description": [
-      "City Park at 111 Bree Street/Mama Shelter Hotel and Residences Cape Town is an innovative mixed-use redevelopment that reimagines along-standing landmark in the heart of the Cape Town CBD. The former Christiaan Barnard Hospital occupies an entire city block bounded by Bree and Loop Streets, and Longmarket and Church Streets, in an area with a rich history and heritage.",
-      "The building itself has a rich and notable history. It was originally built in 1969as a car park with offices for an engineering business above. In 1983, it was converted and opened as City Park Hospital, the oldest private hospital in Cape Town. In 2001 it was named after Prof. Christiaan Barnard, who pioneered the world’s first successful heart transplant. In November2009, the hospital, then the oldest private hospital in the city, began searching for a new location. It officially opened to patients at its new site in the Cape Town Foreshore in December 2016.",
-      "‍Our design response applies adaptive reuse and conservation principles to a large-scale project within a heritage protection overlay zone. The design preserves the building’s original massing and form, respecting the existing structure’s integrity while modernising its functionality by upgrading it to contemporary international design standards. The redesigned ground floor enhances the building’s street presence and activates public engagement at street level.",
-      "When complete, the building will comprise 62 branded residences, 127 hotel rooms, 2,500 m² of retail space at ground level, 10 500 m² of premium grade offices and co-working, and 1 000 parking bays. The hotel and residences will be operated by international group Ennismore under the brand Mama Shelter. The development will also feature two ground floor restaurants, a 17thfloor rooftop restaurant, and a rooftop pool.",
-      "_Renders supplied by client All hotel spaces designed by Mama Shelter and locally documented and executed by Skapari"
-    ],
-    "client": "private",
-    "status": "on site",
-    "year": "2026",
-    "services": "architecture",
-    "tags": "architecture, mixed-use, hospitality, residential, office",
-    "location": "https://www.google.com/maps/place/Mama+Shelter+Cape+Town/@-33.9217723,18.4152606,943m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1dcc675c5c059059:0xd59d0ba5ea066663!8m2!3d-33.9217723!4d18.4178355!16s%2Fg%2F11yccg8qs4?entry=tts&g_ep=EgoyMDI1MDgwNC4wIPu8ASoASAFQAw%3D%3D&skid=48ac2e8b-3edd-4473-b5a5-c24395368db8",
-    "country": "South Africa",
-    "imageSrc": "/images/projects/city-park-mama/city-park-mama-8.jpg",
-    "imageGallery": [
-      { "src": "/images/projects/city-park-mama/city-park-mama-0.jpg", "imageDesc": "mountain view" },
-      { "src": "/images/projects/city-park-mama/city-park-mama-1.jpg", "imageDesc": "bree street pedestrian entrance" },
-      { "src": "/images/projects/city-park-mama/city-park-mama-2.jpg", "imageDesc": "atrium" },
-      { "src": "/images/projects/city-park-mama/city-park-mama-3.jpg", "imageDesc": "mama shelter - view from the 17th floor" },
-      { "src": "/images/projects/city-park-mama/city-park-mama-4.jpg", "imageDesc": "mama shelter - rooftop pool" },
-      { "src": "/images/projects/city-park-mama/city-park-mama-5.jpg", "imageDesc": "two bedroom terrace" },
-      { "src": "/images/projects/city-park-mama/city-park-mama-6.jpg", "imageDesc": "harbor view" },
-      { "src": "/images/projects/city-park-mama/city-park-mama-7.jpg", "imageDesc": "aerial view of sunset" }
-    ]
-  },
+    {
+      "slug": "city-park-mama-shelter-hotel-and-residences",
+      "title": "City Park/Mama Shelter Hotel and Residences",
+      "tagline": "Cape Town, South Africa",
+      "description": [
+        "City Park at 111 Bree Street/Mama Shelter Hotel and Residences Cape Town is an innovative mixed-use redevelopment that reimagines along-standing landmark in the heart of the Cape Town CBD. The former Christiaan Barnard Hospital occupies an entire city block bounded by Bree and Loop Streets, and Longmarket and Church Streets, in an area with a rich history and heritage.",
+        "The building itself has a rich and notable history. It was originally built in 1969as a car park with offices for an engineering business above. In 1983, it was converted and opened as City Park Hospital, the oldest private hospital in Cape Town. In 2001 it was named after Prof. Christiaan Barnard, who pioneered the world’s first successful heart transplant. In November2009, the hospital, then the oldest private hospital in the city, began searching for a new location. It officially opened to patients at its new site in the Cape Town Foreshore in December 2016.",
+        "‍Our design response applies adaptive reuse and conservation principles to a large-scale project within a heritage protection overlay zone. The design preserves the building’s original massing and form, respecting the existing structure’s integrity while modernising its functionality by upgrading it to contemporary international design standards. The redesigned ground floor enhances the building’s street presence and activates public engagement at street level.",
+        "When complete, the building will comprise 62 branded residences, 127 hotel rooms, 2,500 m² of retail space at ground level, 10 500 m² of premium grade offices and co-working, and 1 000 parking bays. The hotel and residences will be operated by international group Ennismore under the brand Mama Shelter. The development will also feature two ground floor restaurants, a 17thfloor rooftop restaurant, and a rooftop pool.",
+        "_Renders supplied by client All hotel spaces designed by Mama Shelter and locally documented and executed by Skapari"
+      ],
+      "client": "private",
+      "status": "on site",
+      "year": "2026",
+      "services": "architecture",
+      "tags": "architecture, mixed-use, hospitality, residential, office",
+      "location": "https://www.google.com/maps/place/Mama+Shelter+Cape+Town/@-33.9217723,18.4152606,943m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1dcc675c5c059059:0xd59d0ba5ea066663!8m2!3d-33.9217723!4d18.4178355!16s%2Fg%2F11yccg8qs4?entry=tts&g_ep=EgoyMDI1MDgwNC4wIPu8ASoASAFQAw%3D%3D&skid=48ac2e8b-3edd-4473-b5a5-c24395368db8",
+      "country": "South Africa",
+      "imageSrc": "/images/projects/city-park-mama/city-park-mama-8.jpg",
+      "imageGallery": [
+        { "src": "/images/projects/city-park-mama/city-park-mama-0.jpg", "imageDesc": "mountain view" },
+        { "src": "/images/projects/city-park-mama/city-park-mama-1.jpg", "imageDesc": "bree street pedestrian entrance" },
+        { "src": "/images/projects/city-park-mama/city-park-mama-2.jpg", "imageDesc": "atrium" },
+        { "src": "/images/projects/city-park-mama/city-park-mama-3.jpg", "imageDesc": "mama shelter - view from the 17th floor" },
+        { "src": "/images/projects/city-park-mama/city-park-mama-4.jpg", "imageDesc": "mama shelter - rooftop pool" },
+        { "src": "/images/projects/city-park-mama/city-park-mama-5.jpg", "imageDesc": "two bedroom terrace" },
+        { "src": "/images/projects/city-park-mama/city-park-mama-6.jpg", "imageDesc": "harbor view" },
+        { "src": "/images/projects/city-park-mama/city-park-mama-7.jpg", "imageDesc": "aerial view of sunset" }
+      ]
+    },
 
-  "conradie-park-urban-design-framework": {
-    "slug": "conradie-park-urban-design-framework",
-    "title": "Conradie Park Urban Design Framework",
-    "tagline": "Cape Town, South Africa",
-    "description": [
-      "Launched in 2018, the Conradie Park Better Living Model is a groundbreaking 22-hectare mixed-use development located on the site of a former hospital which had stood derelict and empty for years Cape Town. It’s one of seven Western Cape Government (WCG) priority projects and sets a precedent above the traditional models delivered under national housing programmes.",
-      "We conceived the design for a new community, and lead the team in developing the masterplan, architectural concepts and public realm. The client brief was to develop an innovative model of high-density residential communities, delivering sustainable, affordable housing supported by schools, shops and workplaces .In a first for South Africa, the scheme accommodates social rental, subsidised sale and open market housing typologies on the same site. These housing types are set in a mixed-use environment offering diverse amenities and services, in a high-quality urban environment that facilitates equitable access, creating strong community bonds and identity.",
-      "The masterplan reinterprets a previous development framework, to create a grid pattern of streets and perimeter blocks, with a consistent, legible high-quality public space network. Buildings sit within a permeable network of public streets, squares, parks and piazzas, with generous tree-lined sidewalks and a linear park along the Elsieskraal canal – the Grande Park. While the site’s previous use is largely erased, the heritage assessment requires the retention of two original buildings, and two routes that cut diagonally through the site. The proposed layout responds to these by rotating the grid at 45° to align with the eastern diagonal, as well as the geometry of the canal and Grande Park along the southeast boundary of the site. This rotated grid optimises the efficiency of the site, optimises building orientation, and creates a legible yet dynamic internal spatial environment.",
-      "Small block sizes with a fine-grain network of streets and walkways facilitate permeability and strengthen the sense of neighbourhood. The scheme prioritises pedestrians with wide sidewalks, footpaths and cycling paths, and a streetscape that functions as public space network instead of simply accommodating cars.",
-      "Green technologies support energy, water and waste management practices. Sitewide sustainable urban drainage infrastructure, to support storm-water attenuation, is designed as a public amenity.",
-      "We’re delivering the project in association with Jakupa Architects and Urban Designers and collaborated with GreenInc on the landscape and public space design."
-    ],
-    "client": "Concor",
-    "status": "on site",
-    "year": "2019",
-    "services": "urban design, public realm + landscape design",
-    "tags": "urban design",
-    "sqm": "220000",
-    "location": "https://www.google.com/maps/place/Conradie+Park/@-33.922768,18.5219472,943m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1dcc5d31ed5b10b9:0x1a12bacb132f75fd!8m2!3d-33.922768!4d18.5219472!16s%2Fg%2F11fsytppz8?entry=tts&g_ep=EgoyMDI1MDgwNi4wIPu8ASoASAFQAw%3D%3D&skid=a88b45a1-ff7f-47f9-ad5e-842b1a0ca0fe",
-    "country": "South Africa",
-    "imageSrc": "/images/projects/conradie-park/conradie-park-12.jpg",
-    "imageGallery": [
-      { "src": "/images/projects/conradie-park/conradie-park-0.jpg", "imageDesc": "aerial view" },
-      { "src": "/images/projects/conradie-park/conradie-park-1.jpg", "imageDesc": "project brief" },
-      { "src": "/images/projects/conradie-park/conradie-park-2.jpg", "imageDesc": "framework layers - structuring elements" },
-      { "src": "/images/projects/conradie-park/conradie-park-3.jpg", "imageDesc": "framework layers - movement" },
-      { "src": "/images/projects/conradie-park/conradie-park-4.jpg", "imageDesc": "framework layers - landscape + public realm" },
-      { "src": "/images/projects/conradie-park/conradie-park-5.jpg", "imageDesc": "framework layers - land use" },
-      { "src": "/images/projects/conradie-park/conradie-park-6.jpg", "imageDesc": "response to local development framework" },
-      { "src": "/images/projects/conradie-park/conradie-park-7.jpg", "imageDesc": "illustrative masterplan" },
-      { "src": "/images/projects/conradie-park/conradie-park-8.jpg", "imageDesc": "precinct plan" },
-      { "src": "/images/projects/conradie-park/conradie-park-9.jpg", "imageDesc": "design guidelines for school site" },
-      { "src": "/images/projects/conradie-park/conradie-park-10.jpg", "imageDesc": "illustrative render of central square" },
-      { "src": "/images/projects/conradie-park/conradie-park-11.jpg", "imageDesc": "illustrative render of linear park" },
-      { "src": "/images/projects/conradie-park/conradie-park-12.jpg", "imageDesc": "illustrative render of streetscape" },
-      { "src": "/images/projects/conradie-park/conradie-park-13.jpg", "imageDesc": "illustrative render of arrival boulevard" },
-      { "src": "/images/projects/conradie-park/conradie-park-14.jpg", "imageDesc": "site progress - 2023" }
-    ]
-  },
+    {
+      "slug": "conradie-park-urban-design-framework",
+      "title": "Conradie Park Urban Design Framework",
+      "tagline": "Cape Town, South Africa",
+      "description": [
+        "Launched in 2018, the Conradie Park Better Living Model is a groundbreaking 22-hectare mixed-use development located on the site of a former hospital which had stood derelict and empty for years Cape Town. It’s one of seven Western Cape Government (WCG) priority projects and sets a precedent above the traditional models delivered under national housing programmes.",
+        "We conceived the design for a new community, and lead the team in developing the masterplan, architectural concepts and public realm. The client brief was to develop an innovative model of high-density residential communities, delivering sustainable, affordable housing supported by schools, shops and workplaces .In a first for South Africa, the scheme accommodates social rental, subsidised sale and open market housing typologies on the same site. These housing types are set in a mixed-use environment offering diverse amenities and services, in a high-quality urban environment that facilitates equitable access, creating strong community bonds and identity.",
+        "The masterplan reinterprets a previous development framework, to create a grid pattern of streets and perimeter blocks, with a consistent, legible high-quality public space network. Buildings sit within a permeable network of public streets, squares, parks and piazzas, with generous tree-lined sidewalks and a linear park along the Elsieskraal canal – the Grande Park. While the site’s previous use is largely erased, the heritage assessment requires the retention of two original buildings, and two routes that cut diagonally through the site. The proposed layout responds to these by rotating the grid at 45° to align with the eastern diagonal, as well as the geometry of the canal and Grande Park along the southeast boundary of the site. This rotated grid optimises the efficiency of the site, optimises building orientation, and creates a legible yet dynamic internal spatial environment.",
+        "Small block sizes with a fine-grain network of streets and walkways facilitate permeability and strengthen the sense of neighbourhood. The scheme prioritises pedestrians with wide sidewalks, footpaths and cycling paths, and a streetscape that functions as public space network instead of simply accommodating cars.",
+        "Green technologies support energy, water and waste management practices. Sitewide sustainable urban drainage infrastructure, to support storm-water attenuation, is designed as a public amenity.",
+        "We’re delivering the project in association with Jakupa Architects and Urban Designers and collaborated with GreenInc on the landscape and public space design."
+      ],
+      "client": "Concor",
+      "status": "on site",
+      "year": "2019",
+      "services": "urban design, public realm + landscape design",
+      "tags": "urban design",
+      "sqm": "220000",
+      "location": "https://www.google.com/maps/place/Conradie+Park/@-33.922768,18.5219472,943m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1dcc5d31ed5b10b9:0x1a12bacb132f75fd!8m2!3d-33.922768!4d18.5219472!16s%2Fg%2F11fsytppz8?entry=tts&g_ep=EgoyMDI1MDgwNi4wIPu8ASoASAFQAw%3D%3D&skid=a88b45a1-ff7f-47f9-ad5e-842b1a0ca0fe",
+      "country": "South Africa",
+      "imageSrc": "/images/projects/conradie-park/conradie-park-0.jpg",
+      "imageGallery": [
+        { "src": "/images/projects/conradie-park/conradie-park-0.jpg", "imageDesc": "aerial view" },
+        { "src": "/images/projects/conradie-park/conradie-park-1.jpg", "imageDesc": "project brief" },
+        { "src": "/images/projects/conradie-park/conradie-park-2.jpg", "imageDesc": "framework layers - structuring elements" },
+        { "src": "/images/projects/conradie-park/conradie-park-3.jpg", "imageDesc": "framework layers - movement" },
+        { "src": "/images/projects/conradie-park/conradie-park-4.jpg", "imageDesc": "framework layers - landscape + public realm" },
+        { "src": "/images/projects/conradie-park/conradie-park-5.jpg", "imageDesc": "framework layers - land use" },
+        { "src": "/images/projects/conradie-park/conradie-park-6.jpg", "imageDesc": "response to local development framework" },
+        { "src": "/images/projects/conradie-park/conradie-park-7.jpg", "imageDesc": "illustrative masterplan" },
+        { "src": "/images/projects/conradie-park/conradie-park-8.jpg", "imageDesc": "precinct plan" },
+        { "src": "/images/projects/conradie-park/conradie-park-9.jpg", "imageDesc": "design guidelines for school site" },
+        { "src": "/images/projects/conradie-park/conradie-park-10.jpg", "imageDesc": "illustrative render of central square" },
+        { "src": "/images/projects/conradie-park/conradie-park-11.jpg", "imageDesc": "illustrative render of linear park" },
+        { "src": "/images/projects/conradie-park/conradie-park-13.jpg", "imageDesc": "illustrative render of arrival boulevard" },
+        { "src": "/images/projects/conradie-park/conradie-park-14.jpg", "imageDesc": "site progress - 2023" }
+      ]
+    },
 
-  "longkloof-precinct-public-realm": {
-    "slug": "longkloof-precinct-public-realm",
-    "title": "Longkloof Precinct + Public Realm",
-    "tagline": "Cape Town, South Africa",
-    "description": [
-      "The Longkloof Precinct transforms a fragmented site into a dynamic, fine-grained urban destination in Cape Town’s Kloof Street district. By balancing heritage conservation with contemporary infill, it introduces high-quality public spaces, walkable connections, and a lively mix of culture, community and commerce.",
-      "The vision was driven by three core principles: unlock public life, retain and reuse valuable built fabric, and reconnect the precinct into its surrounding city.",
-      "From the outset, the design acknowledged the existing urban character of the site, with five heritage buildings in a fragmented precinct, to shape a coherent and legible urban environment. The design team sensitively retained and adapted the historic buildings, while introducing two contemporary structures that respond to scale, massing, and materiality of their context.",
-      "A key move was the creation of five new pedestrian-friendly public spaces, including a central square that anchors the precinct. These human-scaled spaces establish a permeable, publicly accessible and car-free environment, activated by a dynamic mix of use. These open spaces create pause points, accommodate day-night activity, and introduce new life into the area, enhancing the community and cultural exchange.",
-      "- Sean Gibson - Photographer"
-    ],
-    "client": "Growthpoint Properties",
-    "status": "built",
-    "year": "2024",
-    "services": "urban design, architecture",
-    "tags": "urban design, architecture",
-    "location": "https://www.google.com/maps/place/Longkloof+precinct,+7+Park+Rd,+Gardens,+Cape+Town,+8001/@-33.9287652,18.4108618,3a,75y,338.03h,82.52t/data=!3m7!1e1!3m5!1syFucdBXxZ7Xu_JttMNqYgQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D7.476091359427116%26panoid%3DyFucdBXxZ7Xu_JttMNqYgQ%26yaw%3D338.02696138446026!7i16384!8i8192!4m6!3m5!1s0x1dcc6771efb2025b:0x3898e09fe9621e3c!8m2!3d-33.9289658!4d18.4105978!16s%2Fg%2F11lrpcw6ny?entry=tts&g_ep=EgoyMDI1MDUxMy4xIPu8ASoASAFQAw%3D%3D&skid=d5daf6a5-f8aa-4e21-8151-f14d62f28172",
-    "country": "South Africa",
-    "imageSrc": "/images/projects/longkloof-precinct/longkloof-precinct-12.avif",
-    "imageGallery": [
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-0.avif", "imageDesc": "site" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-1.avif", "imageDesc": "macro - site context" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-2.avif", "imageDesc": "site context + analysis" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-3.avif", "imageDesc": "existing + proposed buildings" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-4.avif", "imageDesc": "hotel precinct landscape plan" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-5.avif", "imageDesc": "developed site + public realm" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-6.avif", "imageDesc": "internal view of jamieson lane + public realm" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-7.avif", "imageDesc": "park road entrance to jamieson lane" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-8.avif", "imageDesc": "retail lane entrance from park road" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-9.avif", "imageDesc": "hotel piazza" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-10.avif", "imageDesc": "detail - place making" },
-      { "src": "/images/projects/longkloof-precinct/longkloof-precinct-11.avif", "imageDesc": "inner-city sanctuary" }
-    ]
-  },
+    {
+      "slug": "longkloof-precinct-public-realm",
+      "title": "Longkloof Precinct + Public Realm",
+      "tagline": "Cape Town, South Africa",
+      "description": [
+        "The Longkloof Precinct transforms a fragmented site into a dynamic, fine-grained urban destination in Cape Town’s Kloof Street district. By balancing heritage conservation with contemporary infill, it introduces high-quality public spaces, walkable connections, and a lively mix of culture, community and commerce.",
+        "The vision was driven by three core principles: unlock public life, retain and reuse valuable built fabric, and reconnect the precinct into its surrounding city.",
+        "From the outset, the design acknowledged the existing urban character of the site, with five heritage buildings in a fragmented precinct, to shape a coherent and legible urban environment. The design team sensitively retained and adapted the historic buildings, while introducing two contemporary structures that respond to scale, massing, and materiality of their context.",
+        "A key move was the creation of five new pedestrian-friendly public spaces, including a central square that anchors the precinct. These human-scaled spaces establish a permeable, publicly accessible and car-free environment, activated by a dynamic mix of use. These open spaces create pause points, accommodate day-night activity, and introduce new life into the area, enhancing the community and cultural exchange.",
+        "- Sean Gibson - Photographer"
+      ],
+      "client": "Growthpoint Properties",
+      "status": "built",
+      "year": "2024",
+      "services": "urban design, architecture",
+      "tags": "urban design, architecture",
+      "location": "https://www.google.com/maps/place/Longkloof+precinct,+7+Park+Rd,+Gardens,+Cape+Town,+8001/@-33.9287652,18.4108618,3a,75y,338.03h,82.52t/data=!3m7!1e1!3m5!1syFucdBXxZ7Xu_JttMNqYgQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D7.476091359427116%26panoid%3DyFucdBXxZ7Xu_JttMNqYgQ%26yaw%3D338.02696138446026!7i16384!8i8192!4m6!3m5!1s0x1dcc6771efb2025b:0x3898e09fe9621e3c!8m2!3d-33.9289658!4d18.4105978!16s%2Fg%2F11lrpcw6ny?entry=tts&g_ep=EgoyMDI1MDUxMy4xIPu8ASoASAFQAw%3D%3D&skid=d5daf6a5-f8aa-4e21-8151-f14d62f28172",
+      "country": "South Africa",
+      "imageSrc": "/images/projects/longkloof-precinct/longkloof-precinct-12.avif",
+      "imageGallery": [
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-0.avif", "imageDesc": "site" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-1.avif", "imageDesc": "macro - site context" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-2.avif", "imageDesc": "site context + analysis" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-3.avif", "imageDesc": "existing + proposed buildings" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-4.avif", "imageDesc": "hotel precinct landscape plan" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-5.avif", "imageDesc": "developed site + public realm" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-6.avif", "imageDesc": "internal view of jamieson lane + public realm" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-7.avif", "imageDesc": "park road entrance to jamieson lane" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-8.avif", "imageDesc": "retail lane entrance from park road" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-9.avif", "imageDesc": "hotel piazza" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-10.avif", "imageDesc": "detail - place making" },
+        { "src": "/images/projects/longkloof-precinct/longkloof-precinct-11.avif", "imageDesc": "inner-city sanctuary" }
+      ]
+    },
 
-  "the-signature": {
-    "slug": "the-signature",
-    "title": "The Signature",
-    "tagline": "Mont Choisy, Mauritius",
-    "description": [
-      "The Signature is a 24 000m² mixed-use development in Grand Baie, Mauritius, set within the Mont Choisy smart city. The challenge was to design a building of dramatic presence in a prominent position without detracting from future neighbouring developments, while also balancing the need to acknowledge Mont Choisy’s layered heritage.",
-      "Designed for the Mont Choisy Group, the scheme comprises 95 apartments, retail space, offices and basement parking. The public realm approach supports a lively, pedestrian-friendly environment with permeable routes and a central courtyard filled with greenery. ",
-      "The building’s architecture features slender edges, soft curves and distinctive rose-pink accents that add warmth to its tropical aesthetic. Cantilevered apartment overhangs provide shade over the ground-floor retail, while sliding shutters and fixed screens improve energy efficiency. Interiors designed by dhk Interior Design combine luxury with lifestyle, marking a sophisticated contribution to Mont Choisy’s vision. ",
-      "_ Renderby - Renders"
-    ],
-    "client": "Mont Choisy Group",
-    "status": "on site",
-    "year": "2027",
-    "services": "architecture, urban design, interior design",
-    "tags": "mixed-use, hospitality, office, architecture, interior design",
-    "location": "https://www.google.com/maps/place/Mont+Choisy+signature+villas/@-20.223143,57.4472331,11z/data=!4m7!3m6!1s0x217dab6aa3ec6f79:0x17259ed2f7c2c5d!8m2!3d-20.0218131!4d57.5641928!15sChd0aGUgc2lnbmF0dXJlIG1hdXJpdGl1c5IBD2hvdXNpbmdfY29tcGxleOABAA!16s%2Fg%2F11qf__rv6l?entry=tts&g_ep=EgoyMDI1MDIwNS4xIPu8ASoJLDEwMjExMjM0SAFQAw%3D%3D",
-    "country": "Mauritius",
-    "imageSrc": "/images/projects/the-signature/the-signature-7.avif",
-    "imageGallery": [
-      { "src": "/images/projects/the-signature/the-signature-0.avif", "imageDesc": "dhki - bedroom option" },
-      { "src": "/images/projects/the-signature/the-signature-1.avif", "imageDesc": "dhki - penthouse view" },
-      { "src": "/images/projects/the-signature/the-signature-2.avif", "imageDesc": "dhki - bedroom option" },
-      { "src": "/images/projects/the-signature/the-signature-3.avif", "imageDesc": "dhki penthouse views" },
-      { "src": "/images/projects/the-signature/the-signature-4.avif" },
-      { "src": "/images/projects/the-signature/the-signature-5.avif" },
-      { "src": "/images/projects/the-signature/the-signature-6.avif", "imageDesc": "street facing commercial" },
-      { "src": "/images/projects/the-signature/the-signature-7.avif" },
-      { "src": "/images/projects/the-signature/the-signature-8.avif", "imageDesc": "renderby - renders" }
-    ]
-  }
+    {
+      "slug": "the-signature",
+      "title": "The Signature",
+      "tagline": "Mont Choisy, Mauritius",
+      "description": [
+        "The Signature is a 24 000m² mixed-use development in Grand Baie, Mauritius, set within the Mont Choisy smart city. The challenge was to design a building of dramatic presence in a prominent position without detracting from future neighbouring developments, while also balancing the need to acknowledge Mont Choisy’s layered heritage.",
+        "Designed for the Mont Choisy Group, the scheme comprises 95 apartments, retail space, offices and basement parking. The public realm approach supports a lively, pedestrian-friendly environment with permeable routes and a central courtyard filled with greenery. ",
+        "The building’s architecture features slender edges, soft curves and distinctive rose-pink accents that add warmth to its tropical aesthetic. Cantilevered apartment overhangs provide shade over the ground-floor retail, while sliding shutters and fixed screens improve energy efficiency. Interiors designed by dhk Interior Design combine luxury with lifestyle, marking a sophisticated contribution to Mont Choisy’s vision. ",
+        "_ Renderby - Renders"
+      ],
+      "client": "Mont Choisy Group",
+      "status": "on site",
+      "year": "2027",
+      "services": "architecture, urban design, interior design",
+      "tags": "mixed-use, hospitality, office, architecture, interior design",
+      "location": "https://www.google.com/maps/place/Mont+Choisy+signature+villas/@-20.223143,57.4472331,11z/data=!4m7!3m6!1s0x217dab6aa3ec6f79:0x17259ed2f7c2c5d!8m2!3d-20.0218131!4d57.5641928!15sChd0aGUgc2lnbmF0dXJlIG1hdXJpdGl1c5IBD2hvdXNpbmdfY29tcGxleOABAA!16s%2Fg%2F11qf__rv6l?entry=tts&g_ep=EgoyMDI1MDIwNS4xIPu8ASoJLDEwMjExMjM0SAFQAw%3D%3D",
+      "country": "Mauritius",
+      "imageSrc": "/images/projects/the-signature/the-signature-7.avif",
+      "imageGallery": [
+        { "src": "/images/projects/the-signature/the-signature-0.avif", "imageDesc": "dhki - bedroom option" },
+        { "src": "/images/projects/the-signature/the-signature-1.avif", "imageDesc": "dhki - penthouse view" },
+        { "src": "/images/projects/the-signature/the-signature-2.avif", "imageDesc": "dhki - bedroom option" },
+        { "src": "/images/projects/the-signature/the-signature-3.avif", "imageDesc": "dhki penthouse views" },
+        { "src": "/images/projects/the-signature/the-signature-4.avif" },
+        { "src": "/images/projects/the-signature/the-signature-5.avif" },
+        { "src": "/images/projects/the-signature/the-signature-6.avif", "imageDesc": "street facing commercial" },
+        { "src": "/images/projects/the-signature/the-signature-7.avif" },
+        { "src": "/images/projects/the-signature/the-signature-8.avif", "imageDesc": "renderby - renders" }
+      ]
+    }
+  ]
 }
