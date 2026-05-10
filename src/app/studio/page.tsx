@@ -3,6 +3,7 @@ import { metadataGenerators } from '@/seo/metadata-generators'
 
 import StudioHero from '@/components/studio-components/StudioHero'
 import WhoWeAre from '@/components/studio-components/WhoWeAre'
+import DesignDna from '@/components/studio-components/DesignDna'
 const Journal = dynamic(() => import('@/components/home-components/Journal'))
 
 export const metadata = metadataGenerators.studio()
@@ -12,6 +13,7 @@ export default function StudioPage() {
     <>
       <StudioHero />
       <WhoWeAre />
+      <DesignDna />
       <Journal />
     </>
   )
