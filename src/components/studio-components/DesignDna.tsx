@@ -72,15 +72,15 @@ export default function DesignDna() {
       <div className="absolute inset-0 flex parallax-image-2">
         <div className="relative flex flex-col justify-center max-w-xl size-full">
           <div className="relative size-full aspect-square">
-            <Image src="/images/studio/studio-page-2.avif" alt="Background Image" fill loading="eager" className="object-cover" />
+            <Image src="/images/studio/studio-page-2.avif" alt="Background Image" fill loading="eager" sizes="100dvw" className="object-cover" />
           </div>
           <div className="relative size-full aspect-square">
-            <Image src="/images/studio/studio-page-3.webp" alt="Background Image" fill loading="eager" className="object-cover" />
+            <Image src="/images/studio/studio-page-3.webp" alt="Background Image" fill loading="eager" sizes="100dvw" className="object-cover" />
           </div>
         </div>
 
         <div className="relative size-full parallax-image-1">
-          <Image src="/images/studio/studio-page-1.webp" alt="Background Image" fill loading="eager" className="object-cover" />
+          <Image src="/images/studio/studio-page-1.webp" alt="Background Image" fill loading="eager" sizes="100dvw" className="object-cover" />
         </div>
       </div>
 

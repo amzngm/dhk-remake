@@ -1,4 +1,8 @@
+'use client'
+
 import Image from 'next/image'
+import { useState } from 'react'
+import AnimText from '@/components/ui/unstyled/AnimText'
 
 const WHATWEDO = [
   {
@@ -56,21 +60,47 @@ const WHATWEDO = [
 ]
 
 export default function WhatWeDo() {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
+
+  const toggleItem = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index)
+  }
+
   return (
-    <section className="relative space-y-24 w-dvw h-[150dvh] bg-bg text-text fl-px-4/5 py-140">
-      <h3 className="w-1/2 font-bold text-6xl tracking-wide ms-auto px-1">what we do</h3>
+    <section className="relative space-y-12 lg:space-y-24 w-dvw h-[150dvh] bg-bg text-text fl-px-4/5 py-140">
+      <AnimText as="h3" className="lg:w-1/2 font-bold max-lg:text-4xl text-6xl tracking-wide lg:ms-auto px-1">
+        what we do
+      </AnimText>
 
       <div className="size-full">
         {WHATWEDO.map((item, index) => (
           <div
             key={index}
-            className={`group relative tracking-wide text-main/40 hover:text-text py-0.5 cursor-default ${item.golden ? ' text-yellow-500/40 hover:text-yellow-500' : ''}`}
+            onClick={() => toggleItem(index)}
+            className={`group relative tracking-wide lg:text-main/40 lg:hover:text-text py-2.5 lg:py-0.5 cursor-default ${item.golden ? 'lg:text-yellow-500/40 lg:hover:text-yellow-500 text-yellow-500' : ''}`}
           >
-            <hr className="opacity-0 group-hover:opacity-30" />
-            <h4 className="font-bold text-4xl">{item.title}</h4>
-            <p className="top-2 right-0 absolute max-w-2xs opacity-0 group-hover:opacity-30 normal-case">{item.desc}</p>
-            <div className="top-2 left-1/2 absolute size-60 opacity-0 group-hover:opacity-100">
-              <Image src={item.imageSrc} alt={item.title} fill loading="eager" className="object-contain" />
+            <hr className="lg:group-hover:opacity-30 lg:opacity-0 max-lg:opacity-25 max-lg:mb-3" />
+
+            <div className="flex justify-between gap-2 lg:pb-1">
+              <AnimText as="h4" className="font-medium max-lg:text-2xl text-4xl">
+                {item.title}
+              </AnimText>
+
+              <button aria-label={expandedIndex === index ? 'Collapse' : 'Expand'} className="lg:hidden opacity-50">
+                [ {expandedIndex === index ? '−' : '+'} ]
+              </button>
+            </div>
+
+            <p
+              className={`lg:top-2 lg:right-0 lg:absolute lg:max-w-2xs max-lg:max-w-2xl lg:group-hover:opacity-30 lg:opacity-0 normal-case max-lg:transition-all max-lg:duration-300 ${
+                expandedIndex === index ? 'max-lg:opacity-50 max-lg:py-2' : 'max-lg:opacity-0 max-lg:h-0 max-lg:overflow-hidden'
+              }`}
+            >
+              {item.desc}
+            </p>
+
+            <div className="max-lg:hidden top-2 left-1/2 absolute size-60 opacity-0 lg:group-hover:opacity-100">
+              <Image src={item.imageSrc} alt={item.title} fill loading="eager" sizes="100dvw" className="object-contain" />
             </div>
           </div>
         ))}
