@@ -4,6 +4,8 @@
   --color-main: #8b8b8b;
   --color-bg: #000000;
   --color-text: #ffffff;
+
+  --color-selectColor: #a07b58;
 }
 
 [data-theme='dark'] {

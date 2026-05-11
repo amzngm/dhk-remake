@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-import AnimText from '@/components/ui/unstyled/AnimText'
 
 const WHATWEDO = [
   {
@@ -67,7 +66,7 @@ export default function WhatWeDo() {
   }
 
   return (
-    <section className="relative space-y-12 lg:space-y-24 w-dvw h-[150dvh] bg-bg text-text fl-px-4/5 py-140">
+    <section className="relative space-y-12 lg:space-y-24 w-dvw h-[150dvh] bg-bg text-text fl-px-4/5 py-140 max-lg:py-80">
       <h3 className="lg:w-1/2 font-bold max-lg:text-4xl text-6xl tracking-wide lg:ms-auto px-1">what we do</h3>
 
       <div className="size-full">
