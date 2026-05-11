@@ -12,11 +12,11 @@ export const metadata = metadataGenerators.studio()
 export default function StudioPage() {
   return (
     <>
-      {/* <StudioHero /> */}
-      {/* <WhoWeAre /> */}
-      {/* <DesignDna /> */}
+      <StudioHero />
+      <WhoWeAre />
+      <DesignDna />
       <WhatWeDo />
-      {/* <Journal /> */}
+      <Journal />
     </>
   )
 }

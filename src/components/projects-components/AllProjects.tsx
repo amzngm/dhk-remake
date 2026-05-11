@@ -9,6 +9,7 @@ import MouseFollower, { useMouseFollower } from '@/components/shared/MouseFollow
 import AnimText from '@/components/ui/unstyled/AnimText'
 import allProjects from '@/db/projects.json'
 import BackToTopBtn from '@/components/shared/BackToTopBtn'
+import AnimIn from '@/components/ui/unstyled/AnimIn'
 
 function ProjectGridItem({ project }: { project: (typeof allProjects.projects)[number] }) {
   const { setIsHovering } = useMouseFollower()
@@ -22,7 +23,9 @@ function ProjectGridItem({ project }: { project: (typeof allProjects.projects)[n
     >
       <div className="flex justify-between w-full lg:max-w-[25%] lg:text-main group-hover:text-text normal-case max-lg:py-4 pe-2">
         <div>
-          <AnimText as="h3">{project.title}</AnimText>
+          <AnimText as="h3" className="mb-1">
+            {project.title}
+          </AnimText>
           <AnimText as="p" className="hidden lg:group-hover:block text-main">
             {project.tagline}
           </AnimText>
@@ -44,18 +47,18 @@ function ProjectGridItem({ project }: { project: (typeof allProjects.projects)[n
 function ProjectListItem({ project, index }: { project: (typeof allProjects.projects)[number]; index: number }) {
   return (
     <Link href={`/projects/${project.slug}`} className="group w-full cursor-pointer project-list-item">
-      <div className="grid grid-cols-8 max-lg:grid-cols-2 w-full lg:max-w-[75%] text-main/60 group-data-[active=true]:text-text group-hover:text-text normal-case ms-auto py-4 lg:py-2">
+      <div className="grid grid-cols-12 max-lg:grid-cols-2 w-full lg:max-w-[75%] text-main/60 group-data-[active=true]:text-text group-hover:text-text normal-case ms-auto py-4 lg:py-2">
         <AnimText className="max-lg:hidden col-span-1">0{index + 1}</AnimText>
 
-        <AnimText as="h3" className="lg:col-span-2">
+        <AnimText as="h3" className="lg:col-span-4">
           {project.title}
         </AnimText>
 
-        <AnimText as="p" className="max-lg:hidden col-span-2">
+        <AnimText as="p" className="max-lg:hidden col-span-3">
           {project.services}
         </AnimText>
 
-        <div className="flex justify-end gap-2 lg:col-span-3">
+        <div className="flex justify-end gap-2 lg:col-span-4">
           <AnimText as="p">{project.tagline}</AnimText>
           <AnimText>{project.year}</AnimText>
         </div>
@@ -205,11 +208,11 @@ export default function AllProjects() {
           </div>
         </div>
 
-        <div className={isGrid ? 'block' : 'hidden'}>
+        <AnimIn className={isGrid ? 'block' : 'hidden'}>
           {filteredProjects.map((project, index) => (
             <ProjectGridItem key={project.slug || index} project={project} />
           ))}
-        </div>
+        </AnimIn>
 
         {hasShownList && (
           <div className={!isGrid ? 'block' : 'hidden'}>

@@ -35,7 +35,7 @@ export default function Navbar() {
           </ul>
 
           <div className="flex justify-between items-start w-1/3 tracking-wide">
-            <ThemeSwitch />
+            <div>{pathname === '/' && <ThemeSwitch />}</div>
             <NavMenu />
           </div>
         </div>

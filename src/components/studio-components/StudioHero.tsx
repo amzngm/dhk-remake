@@ -38,7 +38,7 @@ export default function StudioHero() {
   )
 
   return (
-    <section ref={sectionRef} className="relative w-dvw h-[150dvh] bg-bg text-text">
+    <section ref={sectionRef} className="-z-10 relative w-dvw h-[150dvh] bg-bg text-text">
       <Image src="/images/studio/studio-page-bg.webp" alt="Background Image" fill loading="eager" className="object-cover" />
 
       <div className="z-10 relative flex flex-col justify-between w-full h-dvh fl-px-4/5 py-4 parallax-content">

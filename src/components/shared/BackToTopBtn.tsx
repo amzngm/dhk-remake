@@ -12,7 +12,7 @@ export default function BackToTopBtn() {
 
   return (
     <button onClick={scrollToTop} className="group max-lg:order-first max-lg:col-span-2 hover:bg-text lowercase whitespace-nowrap py-0.5 cursor-pointer">
-      <AnimText>
+      <AnimText delay={0.1}>
         [<span className="group-hover:text-bg tracking-wide px-10">Back to top</span>]
       </AnimText>
     </button>

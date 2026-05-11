@@ -1,7 +1,7 @@
 'use client'
 
 import { isValidElement, useMemo, useRef } from 'react'
-import gsap from 'gsap'
+import { gsap } from '@/utils/gsapConfig'
 import { useGSAP } from '@gsap/react'
 
 // ─── single word unit ──────────────────────────────────────────────────────
@@ -46,18 +46,19 @@ export default function AnimText<T extends React.ElementType = 'div'>({
 
       mm.add('(prefers-reduced-motion: no-preference)', () => {
         gsap.from('.anim-word', {
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: 'top 125%',
+            once: true,
+          },
           y: '110%',
           opacity: 0,
           duration: 1.2,
-          // Custom ease approximating Framer Motion's [0.22, 1, 0.36, 1]
           ease: 'power3.out',
           stagger: Number(stagger),
           delay: Number(delay),
         })
       })
-
-      // For users who prefer reduced motion, we don't need a from() animation
-      // since the default CSS state is visible (opacity 1, y 0).
 
       return () => mm.revert()
     },

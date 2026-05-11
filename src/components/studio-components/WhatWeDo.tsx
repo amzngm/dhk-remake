@@ -68,9 +68,7 @@ export default function WhatWeDo() {
 
   return (
     <section className="relative space-y-12 lg:space-y-24 w-dvw h-[150dvh] bg-bg text-text fl-px-4/5 py-140">
-      <AnimText as="h3" className="lg:w-1/2 font-bold max-lg:text-4xl text-6xl tracking-wide lg:ms-auto px-1">
-        what we do
-      </AnimText>
+      <h3 className="lg:w-1/2 font-bold max-lg:text-4xl text-6xl tracking-wide lg:ms-auto px-1">what we do</h3>
 
       <div className="size-full">
         {WHATWEDO.map((item, index) => (
@@ -82,9 +80,7 @@ export default function WhatWeDo() {
             <hr className="lg:group-hover:opacity-30 lg:opacity-0 max-lg:opacity-25 max-lg:mb-3" />
 
             <div className="flex justify-between gap-2 lg:pb-1">
-              <AnimText as="h4" className="font-medium max-lg:text-2xl text-4xl">
-                {item.title}
-              </AnimText>
+              <h4 className="font-medium max-lg:text-2xl text-4xl">{item.title}</h4>
 
               <button aria-label={expandedIndex === index ? 'Collapse' : 'Expand'} className="lg:hidden opacity-50">
                 [ {expandedIndex === index ? '−' : '+'} ]

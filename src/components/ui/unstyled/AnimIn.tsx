@@ -1,7 +1,7 @@
 'use client'
 
 import { forwardRef, useRef } from 'react'
-import gsap from 'gsap'
+import { gsap } from '@/utils/gsapConfig'
 import { useGSAP } from '@gsap/react'
 
 interface AnimInProps extends React.HTMLAttributes<HTMLElement> {
@@ -63,7 +63,7 @@ const AnimIn = forwardRef<HTMLElement, AnimInProps>(
             ease: 'power2.out',
             scrollTrigger: {
               trigger: internalRef.current,
-              start: 'top 85%',
+              start: 'top 100%',
               once: once,
             },
           })
